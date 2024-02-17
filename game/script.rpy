@@ -5,7 +5,7 @@
 
 # Protagonist
 define character.j = Character("Jumbo-chan", who_color="3E8EDE")
-# default j.rizz = 0
+default j.mission = "none"
 
 # Invasive species
 define r = Character("Flora", who_color="C1CD23") # Multiflora Rose

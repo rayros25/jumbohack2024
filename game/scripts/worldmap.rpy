@@ -67,13 +67,24 @@ label tisch:
     jump go_to_map
 
 label dewick:
+    call m1_check
     "It's Dewick-Macphie Dining Hall."
     jump go_to_map
 
 label carm:
+    call m1_check
     "It's Carmichael."
     jump go_to_map
 
 label olin:
+    call m1_check
     "It's Olin."
     jump go_to_map
+
+
+label m1_check:
+    if j.mission == "M1-tisch":
+        "I can't go here, I'm supposed to go to Tisch."
+        jump go_to_map
+    else:
+        return

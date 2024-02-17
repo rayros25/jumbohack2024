@@ -36,6 +36,8 @@ label gamestart:
     j "I wish there was something I could do about it..."
     j "I should do some more reading about them!"
 
+    $ j.mission = "M1-tisch"
+
     jump go_to_map
 
     "I head to Tisch for research"
