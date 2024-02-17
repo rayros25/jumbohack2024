@@ -8,9 +8,9 @@ define character.j = Character("Jumbo-chan", who_color="3E8EDE")
 # default j.rizz = 0
 
 # Invasive species
-define r = Character("Multiflora Rose", who_color="C1CD23")
-define z = Character("Zebra Mussel", who_color="5E4B3C")
-define l = Character("Spotted Lanternfly", who_color="B1282E")
+define r = Character("Flora", who_color="C1CD23") # Multiflora Rose
+define z = Character("Zebra Mussel", who_color="5E4B3C") # Zebra Mussel
+define l = Character("Spotted Lanternfly", who_color="B1282E") # Spotted Lanternfly
 
 
 
@@ -49,6 +49,14 @@ label start:
     hide lfly
 
 
+    show jumbo
+    j "Whoa! I can't believe the world is full of such evil beings!"
+    j "I wish there was something I could do about it..."
+    j "What if I used my womanly charms against them....."
+
 
     # This ends the game.
+    call game_end
+
+label game_end:
     return
