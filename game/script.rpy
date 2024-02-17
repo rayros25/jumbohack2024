@@ -4,12 +4,13 @@
 # name of the character.
 
 # Protagonist
-define j = Character("Jumbo-chan")
+define character.j = Character("Jumbo-chan", who_color="3E8EDE")
+# default j.rizz = 0
 
 # Invasive species
-define r = Character("Multiflora Rose")
-define z = Character("Zebra Mussel")
-define l = Character("Spotted Lanternfly")
+define r = Character("Multiflora Rose", who_color="C1CD23")
+define z = Character("Zebra Mussel", who_color="5E4B3C")
+define l = Character("Spotted Lanternfly", who_color="B1282E")
 
 
 
@@ -31,14 +32,21 @@ label start:
     j "A brisk 60 degrees Farenheit... in the middle of February!"
     j "So nice of the climate to change. I hated all that snow!"
 
+    hide jumbo
+
     show mrose
-    show zmussel
-    show lfly
-
     r "We're evil!"
-    z "We're so evil!!!"
-    l "Actually I'm very chill, I'm not with these guys."
+    hide mrose
 
+
+    show zmussel
+    z "We're so evil!!!"
+    hide zmussel
+
+
+    show lfly
+    l "Actually I'm very chill, I'm not with these guys."
+    hide lfly
 
 
 
