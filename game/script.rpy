@@ -8,9 +8,9 @@ define character.j = Character("Jumbo-chan", who_color="3E8EDE")
 default j.mission = "none"
 
 # Invasive species
-define r = Character("Flora", who_color="C1CD23") # Multiflora Rose
-define z = Character("Zebra Mussel", who_color="5E4B3C") # Zebra Mussel
-define l = Character("Spotted Lanternfly", who_color="B1282E") # Spotted Lanternfly
+define f = Character("Flora", who_color="C1CD23") # Multiflora Rose
+define z = Character("Zac", who_color="5E4B3C") # Zebra Mussel
+define l = Character("Luke", who_color="B1282E") # Spotted Lanternfly
 
 
 

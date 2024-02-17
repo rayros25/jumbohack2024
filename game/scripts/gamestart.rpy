@@ -17,7 +17,7 @@ label gamestart:
     hide jumbo
 
     show mrose
-    r "We're evil!"
+    f "We're evil!"
     hide mrose
 
 
