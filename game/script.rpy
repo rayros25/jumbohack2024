@@ -4,6 +4,7 @@
 # name of the character.
 
 define e = Character("Eileen")
+define j = Character("Jumbo-chan")
 
 
 # The game starts here.
@@ -14,19 +15,21 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg park
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show jumbo
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    j "Oh wow! What a beautiful day we're having!"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    j "A brisk 60 degrees Farenheit... in the middle of February!"
+
+    j "So nice of the climate to change. I hated all that snow!"
 
     # This ends the game.
 
