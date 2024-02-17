@@ -82,6 +82,8 @@ label olin:
     jump go_to_map
 
 
+#### Mission checks
+
 label m1_check:
     if j.mission == "M1-tisch":
         "I can't go here, I'm supposed to go to Tisch."
