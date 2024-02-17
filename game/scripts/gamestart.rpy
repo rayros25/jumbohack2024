@@ -48,5 +48,7 @@ label gamestart:
 
     j "What if I used my womanly charms against them....."
 
+    jump flora
+
     # This ends the game.
     call game_end
