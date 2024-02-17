@@ -34,9 +34,19 @@ label gamestart:
     show jumbo
     j "Whoa! I can't believe the world is full of such evil beings!"
     j "I wish there was something I could do about it..."
+    j "I should do some more reading about them!"
+
+    "I head to Tisch for research"
+
+    scene bg tischroof
+    show jumbo
+    j "Oh, now I get it!"
+
     j "What if I used my womanly charms against them....."
 
     call dir_test
+
+    "Ok, just making sure this works"
 
 
     # This ends the game.

@@ -152,6 +152,8 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    # line thickness, color, x offset, y offset
+    outlines [ ( 3, "#111", 0, 0) ]
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
