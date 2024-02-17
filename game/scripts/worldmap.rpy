@@ -47,8 +47,8 @@ screen worldmap:
     imagemap:
         # all placeholders
         ground "bg forest.png"
-        hover "bg forest.png"
-        idle "bg forest.png"
+        hover "bg davis.png"
+        idle "bg tischroof.png"
 
         hotspot (62, 399, 90, 91) clicked Jump("tisch")
         hotspot (227, 302, 141, 137) clicked Jump("dewick")

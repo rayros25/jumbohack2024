@@ -311,6 +311,9 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        # added here
+        textbutton _("Extra Info") action ShowMenu("extrainfo")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -718,6 +721,42 @@ style slot_button:
 
 style slot_button_text:
     properties gui.text_properties("slot_button")
+
+
+## Extra Info Screen ##########
+## TODO: This is just a rip-off of about
+
+screen extrainfo():
+
+    tag menu
+
+    ## This use statement includes the game_menu screen inside this one. The
+    ## vbox child is then included inside the viewport inside the game_menu
+    ## screen.
+    use game_menu(_("About"), scroll="viewport"):
+
+        style_prefix "about"
+
+        vbox:
+
+            label "[config.name!t]"
+            text _("Version [config.version!t]\n")
+
+            ## gui.about is usually set in options.rpy.
+            if gui.about:
+                text "[gui.about!t]\n"
+
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+
+
+style about_label is gui_label
+style about_label_text is gui_label_text
+style about_text is gui_text
+
+style about_label_text:
+    size gui.label_text_size
+
+
 
 
 ## Preferences screen ##########################################################
