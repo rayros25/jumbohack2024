@@ -22,14 +22,17 @@ label flora:
     f "Rosa Multiflora, if you care about those sorts of names..."
     hide mrose
 
+    $ config.menu_include_disabled = True
+    $ quest_to_defeat_you = True
     menu flora_01:
         f "So what brings you here?"
-        "I'm on a quest to defeat you?":
+        "I'm on a quest to defeat you?" if quest_to_defeat_you:
             f """
                 Uhhh... Sure?
 
                 No... Why are you actually here?
             """
+            $ quest_to_defeat_you = False
             jump flora_01
         "I was wandering through the woods and saw you":
             show jumbo

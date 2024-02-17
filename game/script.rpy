@@ -16,6 +16,7 @@ define l = Character("Luke", who_color="B1282E") # Spotted Lanternfly
 
 # The game starts here.
 label start:
+    play music "duck.mp3" loop
     jump gamestart
 
 label game_end:
