@@ -80,7 +80,11 @@ label flora:
         It's been providing me...
 
         Providing me really good support.
-        
+
         If you know what I mean...
     """
     hide mrose
+
+    show jumbo
+    j "Uhuh. So... What do you like to do for fun?"
+    hide jumbo
