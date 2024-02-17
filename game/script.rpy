@@ -54,6 +54,8 @@ label start:
     j "I wish there was something I could do about it..."
     j "What if I used my womanly charms against them....."
 
+    call dir_test
+
 
     # This ends the game.
     call game_end
