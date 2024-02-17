@@ -38,7 +38,7 @@ label gamestart:
 
     $ j.mission = "M1-tisch"
 
-    jump go_to_map
+    # jump go_to_map
 
     "I head to Tisch for research"
 
