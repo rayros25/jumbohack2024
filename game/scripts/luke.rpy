@@ -233,7 +233,7 @@ label luke:
         "Let Luke continue":
             "Ugh... I just cant do it. I can't bring myself to kill Luke, even if he's invasive."
             "Begrudgingly, I let him continue his process until he was done."
-
+            # TODO add a fade to black
             show lfly
 
             l "Alright. I'm finished."
@@ -252,3 +252,4 @@ label luke:
             "Or rather, what I hadn't done."
             "Nevertheless, I finished my date with Luke"
     "Seeing as I was done here, I left the tree"
+    jump route_choice
