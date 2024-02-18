@@ -86,7 +86,7 @@ def get_picture(spec_soup):
     for img in imgs:
         if "maroon" not in img["src"] and "spacer" not in img["src"] and "thumbnails" in img["src"]:
             save_img = requests.get("https://massnrc.org/pests/pestFAQsheets/" + img["src"])
-            with open(img["src"].replace("thumbnails/", "./MassInvasiveSpecies/Pictures/"),'wb') as f:
+            with open(img["src"].replace("thumbnails/", "./game/animal_data_picture/"),'wb') as f:
                 f.write(save_img.content)
             return img["src"].replace("thumbnails/", "")
 
@@ -112,19 +112,13 @@ def save_species():
     lists = soup.find_all("ul", class_="indexlist")
     invasive_list = lists[1]
     links = invasive_list.find_all('a')
-    
-    if not os.path.exists("./MassInvasiveSpecies"):
-        os.mkdir("./MassInvasiveSpecies")
-    if not os.path.exists("./MassInvasiveSpecies/Pictures"):
-        os.mkdir("./MassInvasiveSpecies/Pictures")
 
     for link in links:
         try:
             org = get_org("https://massnrc.org/pests/" + link.get('href'))
-            with open("./MassInvasiveSpecies/"+org["name"]+".json", "w") as outfile: 
+            with open("./game/animal_data/"+org["name"]+".json", "w") as outfile: 
                 json.dump(org, outfile)
         except Exception as error:
             print("Error occurred scraping species: ", error)
-
-        
+    
 save_species()
