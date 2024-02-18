@@ -182,7 +182,6 @@ label zac:
             in theme park full of disinfectants!"
             j "Let's go to Bleach Land!"
             "Jumbo-chan and Zac go to Bleach Land."
-# TODO: scene change???
             show zmussel
             z "So what are we doing here?"
             show jumbo
@@ -194,7 +193,6 @@ label zac:
             "Probably."
             jump route_choice
         "The Selfish Shellfish":
-# TODO: scene change???
             "Jumbo-chan and Zac go to the Selfish Shellfish."
             show jumbo
             j "I'd love to order some mussels, but they said they were out..."
@@ -215,8 +213,6 @@ label zac:
             "Mostly."
             jump route_choice
         "Let's hurry to the next lake":
-# TODO: scene change???
-# change this to park
             "Jumbo-chan swims around the new lake while Zac watches."
             "Once Jumbo-chan gets out, the two try to play volleyball,"
             "but unfortunately Zac cuts it open with his shells."

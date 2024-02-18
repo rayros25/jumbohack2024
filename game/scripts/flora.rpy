@@ -1,4 +1,3 @@
-# TODO: improve movements
 label flora:
     scene bg forest
     play music "trees.mp3" loop
@@ -222,7 +221,6 @@ label flora:
             "Jumbo-chan CUTS HER APART WITH THE SHEARS she just so happens to have in her trunk."
             hide mrose with dissolve
             show jumbo at center with move
-# TODO: slice sound effect + visual effect?
             """
                 Then she drops the pieces to the ground 
                 and sprays herbicide on them.
@@ -235,7 +233,6 @@ label flora:
         "SUPLEX HER INTO THE GROUND!":
             show jumbo sad
             show mrose sad
-# TODO: rotate flora?
             """
                 Jumbo-chan suplexes Flora into the ground...
 

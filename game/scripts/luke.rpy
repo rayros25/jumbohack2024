@@ -207,19 +207,17 @@ label luke:
             "My comically large hammer"
             "I raise it above my head, and let loose the final words that Luke would hear."
             
-            j "Nice ----- bro!"
+            j "Sorry MC, prepare to be hammered!"
             
             show lfly mad
 
-            l "...what?"
+            l "...but aren't {i}you{/i} the main character?"
 
-            "CLANG" 
-            # TODO play metal pipe
+            "{i}{b}CLANG{/b}{/i}" 
 
             hide lfly with dissolve
             
             "I bring the might hammer down onto luke, turning him into a pancake. Looks like his journey is over"
-            # TODO turn him into a pancake
 
             """
                 My task is complete! I managed to eliminate the species with minimal collateral damage.
@@ -231,7 +229,6 @@ label luke:
             "Ugh... I just cant do it. I can't bring myself to kill Luke, even if he's invasive."
             "Begrudgingly, I let him continue his process until he was done."
             "Hours passed by..."
-            # TODO add a fade to black
             show lfly happy
 
             l "Alright. I'm finished."

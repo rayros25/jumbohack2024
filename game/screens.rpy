@@ -726,8 +726,6 @@ style slot_button_text:
 
 
 ## Extra Info Screen ##########
-## TODO: This is just a rip-off of about
-
 screen extrainfo():
 
     tag menu
