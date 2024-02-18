@@ -5,11 +5,11 @@ TEAM: Comp Cat Returns
 Raymond Rosales, Aria Yang, Spencer Goss, Matthew Wong, Andrew Lin
 
 ## HOW TO USE
-Download the `jumbohack2024-1.0-dists` directory and extract the archive
-appropriate to your operating system. For Windows, simply enter the extracted
-folder and click `jumbohack2024.exe`. For MacOS, simply launch the extracted
-app. For Linux, simply enter the extracted folder and execute the script
-`jumbohack2024.sh`.
+Download the builds from [this Google drive folder](https://drive.google.com/drive/folders/1CYky2PScKZI3hnwMexCijFYCusYweW71?usp=sharing)
+and extract the archive appropriate to your operating system. For Windows,
+simply enter the extracted folder and click `jumbohack2024.exe`. For MacOS,
+simply launch the extracted app. For Linux, simply enter the extracted folder
+and execute the script `jumbohack2024.sh`.
 
 ## Visual Novel
 This visual novel aims to entertain and educate about invasive species.
