@@ -13,7 +13,8 @@ label gamestart:
     # TODO: delete this
     # call gallery
 
-    show jumbo happy at jumper
+    # show jumbo happy at jumper
+    show jumbo happy
 
     # show flora test
     # show zac test
@@ -21,6 +22,9 @@ label gamestart:
     # These display lines of dialogue.
     j "Oh wow! What a beautiful day we're having!"
     j "A brisk 60 degrees Farenheit... in the middle of February!"
+
+    show jumbo neutral at jumper
+
     j "So nice of the climate to change. I hated all that snow!"
 
     hide jumbo
@@ -42,7 +46,7 @@ label gamestart:
     hide lfly
 
 
-    show jumbo sad at jumper
+    show jumbo sad
     # show jumbo sad
     j "Whoa! I can't believe the world is full of such evil beings!"
     j "I wish there was something I could do about it..."
