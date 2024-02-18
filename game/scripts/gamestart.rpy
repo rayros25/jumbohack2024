@@ -13,7 +13,13 @@ label gamestart:
     # TODO: delete this
     # call gallery
 
-    show jumbo happy at jumper:
+    # show jumbo happy at jumper:
+    #     zoom 0.5
+
+    show flora test:
+        zoom 0.5
+
+    show zac test:
         zoom 0.5
 
     # These display lines of dialogue.
