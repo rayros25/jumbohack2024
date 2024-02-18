@@ -79,7 +79,7 @@ label zac:
     menu zac_02:
         "What's left?":
             show jumbo
-            "So what's left for you now?"
+            j "So what's left for you now?"
             hide jumbo
             show zmussel
             z "Other than expanding our buisness, there's not much to do..."
@@ -91,3 +91,9 @@ label zac:
             on how to GROW OUR BUSINESS"
             z "Which is how we've met you!"
             hide zmussel
+        "Try something else?":
+            j "Have you considered trying something else?"
+            # TODO
+        "So that's why...":
+            j "Oh, so that's why there's no customers."
+            # TODO
