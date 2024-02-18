@@ -64,7 +64,7 @@ label gamestart:
     $ luke_route = True 
     $ zac_route = True
     menu route_choice:
-        j "I wonder where I should go to find the invasive species"
+        j "I wonder where I should go to find the invasive species..."
         "The forest" if flora_route:
             $ flora_route = False
             jump flora
