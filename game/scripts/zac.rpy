@@ -131,6 +131,76 @@ label zac:
             z "That would be FUN!"
             hide zmussel
         "Watching sunsets over the river":
-            j "river TODO"
+            show jumbo
+            j "I love watching the sun set over the river."
+            j "It's just such a tranquil feeling."
+            hide jumbo
+            show zmussel
+            z "I know what you mean."
+            z "Watching the sunset from this lake is just the BEST!"
+            z "It's so pretty... Just like you ;)"
+            hide zmussel
         "Eating sand":
-            j "sand TODO"
+            show jumbo
+            j "I enjoy eating sand in the middle of the desert."
+            hide jumbo
+            show zmussel
+            z "Can't say we've been to the desert, ourselves, 
+            but we have had sand before."
+            z "It was quite grainy."
+            z "So that's something we've shared."
+            hide zmussel
+    
+    show zmussel
+    z "(Andrew the assistant noises)"
+    z "Oh, Andrew just had a GREAT idea!"
+    z "Could we ask you for a teensy tiny favor?"
+    z "Would you be willing to go on a date with all of us?"
+    z "There's not all that many at this point... 
+    What are we at right now, Fred?"
+    z "(Fred the accountant noises)"
+    z "100,000! Rookie numbers still!"
+    z "If you agree to take us somewhere, 
+    imagine the number of debts you'd have in your favor!"
+    z "You'd literally be the queen of that other lake! Fred?"
+    z "(Fred the accountant noises)"
+    z "There'd be millions of us!"
+    z "And, it's not like we'd need water for several days 
+    before we get to the next lake..."
+    z "We could take our sweet time with the date. Just think about it."
+    hide zmussel
+
+    menu zac_04
+        "Refuse.":
+            "Indeed, the choice not to spread this 
+            invasive species is the best one."
+            "Congratulations. Congratulations. Congratulations."
+            "Jumbo-chan has successfully prevented the spread of this species."
+            jump route_choice
+        "Accept.":
+            "Jumbo-chan isn't sure she can kill all of them, 
+            but she decides to accept the date and try..."
+    
+    scene bg car
+    show zmussel
+    z "Oh, WOW! It's great to get to go to another place! TRULY GREAT!!!"
+    "Zac attaches themselves to Jumbo-chan's car."
+    z "You really look quite wonderful today."
+    hide zmussel
+    show jumbo
+    j "Likewise, you look very sharp today."
+    hide jumbo
+    show zmussel
+    z "AIGHT!"
+    z "SINCE this is A DATE!"
+    z "Before we get to the next lake..."
+    hide zmussel
+
+    menu zac_05:
+        z "Where should we go?"
+        "Bleach Land":
+            "TODO"
+        "The Selfish Shellfish":
+            "TODO"
+        "Let's hurry to the next lake":
+            "TODO"
