@@ -1,3 +1,4 @@
+# TODO replace "show jumbo" with appropriate Jumbo-chan sprites
 label flora:
     scene bg forest
 
@@ -241,11 +242,50 @@ label flora:
 
     menu flora_03:
         "CUT HER IN TWAIN!":
-            #TODO
-            jump flora_03
+            show jumbo happy
+            """
+                Jumbo-chan CUTS HER APART WITH THE SHEARS 
+                she just so happens to have in her trunk.
+
+                Then she drops the pieces to the ground 
+                and sprays herbicide on them.
+
+                Jumbo-chan has eliminated an invasive species.
+
+                Congratulations. Congratulations. Congratulations.
+            """
+            j "Well, I didn't let her fall."
+            hide jumbo happy
         "SUPLEX HER INTO THE GROUND!":
-            #TODO
-            jump flora_03
+            show jumbo sad
+            """
+                Jumbo-chan suplexes Flora into the ground...
+
+                And leaves, flowers, stems, and seeds scatter everywhere.
+
+                Unfortunately, Jumbo-chan has helped her spread her influence 
+                in a new environment... 
+                
+                She's scattered all through the botanical gardens.
+
+                Jumbo-chan has failed to eliminate this invasive species, 
+                and the noise brings more people around...
+            """
+            j "I'd better get out of here before I'm banned from 
+            the botanical gardens for life."
+            hide jumbo sad
         "Continue the date.":
-            #TODO
-            jump flora_03
+            show jumbo neutral
+            """
+                Jumbo-chan and Flora continue the date, 
+
+                with Jumbo-chan carrying her all around the botanical gardens.
+
+                Flora eventually touches a lot of the plants there, 
+                and drops seeds and stalks all around the gardens.
+            """
+            j "Hopefully something doesn't happen from that... 
+            But the date went well?"
+            hide jumbo neutral
+    j "Well, my trip to the woods was certainly eventful..."
+    jump route_choice
