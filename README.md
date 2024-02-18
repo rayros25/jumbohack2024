@@ -25,3 +25,5 @@ in that directory to update the game.
 
 Ensure that all packages found in the invasive_scraper.py are installed in your
 computer if any errors arise. 
+
+NOTE: Do not move the game or script seperately. Move the outside dir instead.
