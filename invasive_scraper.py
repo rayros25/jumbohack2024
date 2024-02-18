@@ -1,9 +1,20 @@
+# This script is intended to he used with the "Rizzing Up Invasive Species"
+# Visual Novel to update the data of invasive species found in Massachussetts.
+# To run the script, run this file with python in the directory it is found.
+
+# DO NOT MOVE THE SCRIPT FROM THE DIRECTORY OR MOVE THE GAME
+
 import requests
 from bs4 import BeautifulSoup
 import re
-import os
 import json
 
+# locate_table
+# Purpose: recursively find the last child table within nested tables
+# Inputs: 
+#   table: table tag object
+#   query: text to find in table text
+# Returns: returns the last nested table with the text
 def locate_table(table, query):
     sub_tables = table.find_all("table")
     if len(sub_tables) == 0:
@@ -13,6 +24,11 @@ def locate_table(table, query):
             table = locate_table(new_table, query)
     return table
 
+# get_hosts
+# Purpose: Get the hosts of invasive species
+# Inputs: 
+#   soup: a beautiful soup object of the page
+# Returns: A list of hosts
 def get_hosts(soup):
     paragraphs = soup.find_all("p", class_="normal_copy")
     for p in paragraphs:
@@ -31,10 +47,13 @@ def get_hosts(soup):
     return None
 
 
-
+# get_appearance
+# Purpose: Get the appearane of invasive species
+# Inputs: 
+#   soup: a beautiful soup object of the page
+# Returns: A list of appearances
 def get_appearance(soup):
     tables = soup.find_all("table", border="0", cellspacing="0", cellpadding="0")
-    # If the page has symptoms
     found = False
     for table in tables:
         if "Symptoms" in table.text:
@@ -58,9 +77,14 @@ def get_appearance(soup):
             return appearances
     return None
 
+
+# get_damage
+# Purpose: Get the damage of invasive species
+# Inputs: 
+#   soup: a beautiful soup object of the page
+# Returns: A list of damage
 def get_damage(soup):
     tables = soup.find_all("table", border="0", cellspacing="0", cellpadding="0")
-    # If the page has symptoms
     found = False
     for table in tables:
         if "amage" in table.text:
@@ -81,15 +105,29 @@ def get_damage(soup):
             return appearances
     return None
 
+
+# get_picture
+# Purpose: Gets a picture of an invasive species
+# Inputs: 
+#   soup: a beautiful soup object of the page
+# Notes: downloads a picture and saves it in memory
+# Returns: an identifier of the picture
 def get_picture(spec_soup):
     imgs = spec_soup.find_all("img")
     for img in imgs:
         if "maroon" not in img["src"] and "spacer" not in img["src"] and "thumbnails" in img["src"]:
             save_img = requests.get("https://massnrc.org/pests/pestFAQsheets/" + img["src"])
-            with open(img["src"].replace("thumbnails/", "./MassInvasiveSpecies/Pictures/"),'wb') as f:
+            with open(img["src"].replace("thumbnails/", "./game/animal_data_picture/"),'wb') as f:
                 f.write(save_img.content)
             return img["src"].replace("thumbnails/", "")
 
+
+# get_org
+# Purpose: Gets all the data from an organism
+# Inputs: 
+#   url: the url to the organism
+# Notes: saves a picture of the organism to memory
+# Returns: A json/dict containing all information of the organism
 def get_org(url):
     org_dict = {}
     
@@ -105,6 +143,9 @@ def get_org(url):
     org_dict["picture"] = get_picture(spec_soup)
     return org_dict
 
+# save_species
+# Purpose: Gets all data of invasive species found in Mass.
+# Notes: Saves pictures of all the data and saves jsons of all the species
 def save_species():
     mainurl = "https://massnrc.org/pests/factsheets.htm"
     page = requests.get(mainurl)
@@ -112,19 +153,13 @@ def save_species():
     lists = soup.find_all("ul", class_="indexlist")
     invasive_list = lists[1]
     links = invasive_list.find_all('a')
-    
-    if not os.path.exists("./MassInvasiveSpecies"):
-        os.mkdir("./MassInvasiveSpecies")
-    if not os.path.exists("./MassInvasiveSpecies/Pictures"):
-        os.mkdir("./MassInvasiveSpecies/Pictures")
 
     for link in links:
         try:
             org = get_org("https://massnrc.org/pests/" + link.get('href'))
-            with open("./MassInvasiveSpecies/"+org["name"]+".json", "w") as outfile: 
+            with open("./game/animal_data/"+org["name"]+".json", "w") as outfile: 
                 json.dump(org, outfile)
         except Exception as error:
             print("Error occurred scraping species: ", error)
-
-        
+    
 save_species()
