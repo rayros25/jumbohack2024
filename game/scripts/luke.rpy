@@ -2,9 +2,11 @@ label luke:
     scene bg forest
 
     """
-    I wander through the forest in search for the last creature on my list.
+    I wander through the forest in search for one of the creatues on my list.
 
-    Finally, my journey was nearing its end. With the end of the "Spotted Lanternfly", I would receive the extra credit I was due!
+    "Spotted Lanternfly"
+
+    Known for spreading all across forests in America, and wreaking havoc on crops and plants. This one would definetly have to go.
 
     It wasn't too long before I spotted it in the distance. The lanternfly's bright coloration gave it away.
     """
@@ -135,9 +137,9 @@ label luke:
             show lfly
             l "Hmm?"
             "Luke raises his eyebrows in suscipsion"
-            l "A carnivourous elephant huh... I didn't know those existed. You're quite the character aren't you."\
+            l "A carnivourous elephant huh... I didn't know those existed. You're quite the character aren't you."
             j "Huh? Oh... yeah! There's only a few of us out there you know."
             "Phew"    
-        "Luke showed a smile. I can sense the bond between us growing. Unfortunately for him, that bond would have to be ending soon."
+    "Luke showed a smile. I can sense the bond between us growing. Unfortunately for him, that bond would have to be ending soon."
 
-        l "Alright miss. I gotta do something by this tree before we get going. You're welcome to watch of course."
+    l "Alright miss. I gotta do something by this tree before we get going. You're welcome to watch of course."
