@@ -18,8 +18,32 @@ label zac:
     z "ARE YOU A CUSTOMER?????!?!?!?"
     hide zmussel
 
+    $ config.menu_include_disabled = True
+    $ already_clogged = True
     menu zac_01:
         z "DO you want your PIPES clogged?!"
         "My pipes are already clogged":
+            show jumbo
+            j "Uhhh... My pipes are already clogged. Thanks for your offer..."
+            j "But I can't get water from them currently."
+            j "So no for now..."
+            hide jumbo
+            show zmussel
+            z "Ah, we see..."
+            z "Well, we have plenty of other options that you can choose from."
+            hide zmussel
+            already_clogged = False
             jump zac_01
-            # TODO: finish
+        "Please clog my pipes":
+            show jumbo
+            j "I would love it if you would clog the pipes at my house."
+            j "Make my basement flood because my pipes are busted!"
+            j "(Yeah, right... I'd never accept 
+            \"help\" from someone so fishy.)"
+            hide jumbo
+            show zmussel
+            z "OH YEH!"
+            z "THANKS SO MUCH FOR CONSIDERING OUT PIPE CLOGGING SERVICES"
+            hide zmussel
+        "I don't want that":
+            z "TODO"
