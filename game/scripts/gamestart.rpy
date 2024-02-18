@@ -64,6 +64,8 @@ label gamestart:
     $ luke_route = True 
     $ zac_route = True
     menu route_choice:
+        if !flora_route && !luke_route && !zac_route:
+            jump done
         j "I wonder where I should go to find the invasive species..."
         "The forest" if flora_route:
             $ flora_route = False
@@ -75,5 +77,13 @@ label gamestart:
             $ zac_route = False
             jump zac
 
+    label done:
+    scene bg tisch
+        "Hopefully you've had a fun time,"
+        "and learned a little bit about what to do and not to do when you 
+        encounter invasive species."
+        "To learn more about other invasive species you may encounter in 
+        Massachusetts,"
+        "check out the Extra Info tab!"
     # This ends the game.
     call game_end
