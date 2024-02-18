@@ -62,7 +62,13 @@ label gamestart:
 
     j "What if I used my womanly charms against them....."
 
-    jump flora
+    $ config.menu_include_disabled = True
+    $ flora_route = True 
+    menu path_choice:
+        j "I wonder where I should go"
+        "The woods" if flora_route:
+            $ flora_route = False
+            jump flora
 
     # This ends the game.
     call game_end
