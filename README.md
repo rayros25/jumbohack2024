@@ -27,3 +27,8 @@ Ensure that all packages found in the invasive_scraper.py are installed in your
 computer if any errors arise. 
 
 NOTE: Do not move the game or script seperately. Move the outside dir instead.
+
+-- Sources --
+Background images were either sourced from Tufts or Creative Commons 
+distributions. Links are available in the Image Sources pdf. References used
+are cited in the Works Cited pdf.
