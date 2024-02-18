@@ -1,5 +1,5 @@
 label zac:
-    scene lake
+    scene bg lake
     show jumbo
     j "(I hear screaming coming from the lake...)"
     hide jumbo
@@ -14,7 +14,7 @@ label zac:
     hide jumbo
 
     show zmussel
-    z "AND TO DO THAT we'll ned your help..."
+    z "AND TO DO THAT we'll need your help..."
     z "ARE YOU A CUSTOMER?????!?!?!?"
     hide zmussel
 
