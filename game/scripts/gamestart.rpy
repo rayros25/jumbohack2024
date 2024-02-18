@@ -1,25 +1,9 @@
 label gamestart:
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-    scene bg park
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-    # show jumbo happy:
-    #     yalign 100
-
-    # TODO: delete this
-    # call gallery
+    scene bg westhall
 
     # show jumbo happy at jumper
     show jumbo happy
 
-    # show flora test
-    # show zac test
-
-    # These display lines of dialogue.
     j "Oh wow! What a beautiful day we're having!"
     j "A brisk 60 degrees Farenheit... in the middle of February!"
 
@@ -29,27 +13,37 @@ label gamestart:
 
     hide jumbo
 
+    "Jumbo-chan sees a few posters."
+    "WANTED: DEAD"
+    "For crimes against the environment."
+    "REWARD: Extra credit for Bio 14"
+    "- Tufts Biology Department"
 
-    # WE SHALL CONQUER THE ECOSYSTEM
-    show mrose
-    f "We're evil!"
-    hide mrose
-
-
-    show zmussel
-    z "We're so evil!!!"
-    hide zmussel
-
-
-    show lfly
-    l "Actually I'm very chill, I'm not with these guys. (I'm very evil)"
-    hide lfly
-
+    menu posters:
+        "Multiflora Rose":
+            show mrose neutral
+            "Multiflora roses have been smothering plants in the nearby Forest!"
+            hide mrose neutral
+            jump posters
+        "Zebra Mussel":
+            show zmussel neutral
+            "Zebra mussels have been wreaking havoc in the Lake nearby!"
+            hide zmussel neutral
+            jump posters
+        "Spotted Lanternfly":
+            show lfly neutral
+            "Spotted lanternflies have been eating plants in the Woods nearby!"
+            hide lfly neutral
+            jump posters
+        "Done looking at the posters.":
+            "Jumbo-chan finishes looking at the posters, 
+            and reflects on what she's learned..."
 
     show jumbo sad
     # show jumbo sad
-    j "Whoa! I can't believe the world is full of such evil beings!"
-    j "I wish there was something I could do about it..."
+    j "Whoa! Crimes against the environment..."
+    j "I wish there was something I could do about it."
+    j "A bit of extra credit couldn't hurt, either."
     show jumbo neutral at jumper
     j "I should do some more reading about them!"
 
@@ -57,21 +51,20 @@ label gamestart:
 
     # jump go_to_map
 
-    "I head to Tisch for research"
+    "Jumbo-chan heads to Tisch for research"
 
     scene bg tischroof
     show jumbo neutral at jumper
     j "Oh, now I get it!"
-
-    j "What if I used my womanly charms against them....."
+    j "What if I used my womanly charms against them, 
+    and then eliminated them once their guard is down!"
 
     $ config.menu_include_disabled = True
     $ flora_route = True 
     $ luke_route = True 
     $ zac_route = True
-    $ luke_route = True
     menu route_choice:
-        j "I wonder where I should go"
+        j "I wonder where I should go to find the invasive species"
         "The forest" if flora_route:
             $ flora_route = False
             jump flora
@@ -81,9 +74,6 @@ label gamestart:
         "The lake" if zac_route:
             $ zac_route = False
             jump zac
-        "The forest" if luke_route:
-            $ luke_route = False
-            jump luke
 
     # This ends the game.
     call game_end
