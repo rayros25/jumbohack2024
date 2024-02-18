@@ -19,6 +19,8 @@ label gamestart:
 
     hide jumbo
 
+
+    # WE SHALL CONQUER THE ECOSYSTEM
     show mrose
     f "We're evil!"
     hide mrose
@@ -30,7 +32,7 @@ label gamestart:
 
 
     show lfly
-    l "Actually I'm very chill, I'm not with these guys."
+    l "Actually I'm very chill, I'm not with these guys. (I'm very evil)"
     hide lfly
 
 
