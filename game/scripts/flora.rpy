@@ -148,9 +148,32 @@ label flora:
                 outside our own.
             """
             hide jumbo
+            show mrose
+            f """
+                Ooh. I would love to read books together outside sometime.
+
+                It's always nice to get to learn more about others...
+
+                Especially you.
+            """
+            hide mrose
+        "Exploring my environment":
+            show jumbo
+            j """
+                I love exploring new places.
+
+                I'm always looking out for new places to wander around.
+
+                Especially if they're not too crowded...
+            """
+            hide jumbo
+            show mrose
+            f "Ooh... I would love to explore around with you..."
+            f "I wonder where we could go together..."
+            hide mrose
     show mrose
     f """
-        Oh, I had an idea, let's go to the botanical gardens...
+        Oh... I had an idea, let's go to the botanical gardens...
 
         The flowers there are quite pretty, so I've heard.
 
@@ -159,3 +182,12 @@ label flora:
     hide mrose
 
     scene bg botgarden
+    j """
+    (Huh... It was easier to get her on a date than I thought...)
+
+    (I didn't even have to ask myself.)
+
+    (Well, time to find an empty place in the gardens, because...)
+
+    (Iiiiiit's killing time!!!)
+    """
