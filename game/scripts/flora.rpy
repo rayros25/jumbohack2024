@@ -91,3 +91,69 @@ label flora:
     show jumbo
     j "Uhuh. So... What do you like to do for fun?"
     hide jumbo
+
+    show mrose
+    f """
+        Oh. Hm... I really like to climb on top of other plants and get taller,
+
+        because I love to see the world around me.
+
+        Though I doubt the other plants really appreciate that...
+
+        And my previous neighbors seem to keep dying once I've spent too long
+        on top of them...
+
+        Ooh...
+
+        Another thing I'm interested in is growing these cute white flowers.
+
+        They make me look really pretty, do you think?
+
+        ...Though others tell me that my thorns can be a bit prickly.
+
+        That doesn't matter too much, though, because I've blocked out 
+        most of the people I don't like anyways!
+
+        ...Um, I guess I'll ask you the same:
+    """
+    hide mrose
+
+    menu flora_02:
+        f "What do you like to do for fun?"
+
+        "Legendary plant destructor":
+            show jumbo
+            j """
+                I like to dress up in a cardboard box and become
+
+                the LEGENDARY PLANT DESTRUCTOR!
+
+                Feared by the many plants who so happen to get in my way...
+            """
+            hide jumbo
+            show mrose
+            f """
+                Hehe. Well, I wouldn't get in your way if you were to do that.
+
+                In fact, you should take me along. 
+                It'd be a nice change of pace.
+            """
+            hide mrose
+        "Reading books":
+            show jumbo
+            j """
+                I enjoy reading books outside.
+
+                It's a nice way to pass the time, and explore other universes
+                outside our own.
+            """
+            hide jumbo
+    show mrose
+    f """
+        Oh, I had an idea, let's go to the botanical gardens...
+
+        The flowers there are quite pretty, so I've heard.
+
+        Call it a date, if you will. ;)
+    """
+    hide mrose
