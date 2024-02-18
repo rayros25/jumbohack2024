@@ -199,5 +199,50 @@ label flora:
         Though I am curious... 
         
         Why do you keep trying to climb on top of all of them?
+
+        It's a bit dangerous... 
+        
+        I'm the one who has to keep pulling you off them, you know.
     """
     hide jumbo
+
+    show mrose
+    f """
+        Oh, sorry... Don't worry about me. 
+    
+        I'm just trying to get a better view of the gardens.
+    """
+    hide mrose
+
+    show jumbo
+    j """
+        A view of the gardens, huh? You know what would give the best view...
+
+        Getting on my shoulders. 
+        
+        I think that would let you get a higer viewpoint.
+    """
+    hide jumbo
+
+    show mrose
+    f """
+        Ehe... If you don't mind?
+
+        Just be sure to hold me tight so I don't fall... Okay?
+    """
+    hide mrose
+
+    show jumbo
+    j "All right. I promise I won't ever let you fall."
+    hide jumbo
+
+    j "(While she is nice, she is an invasive species, 
+    so I gotta do what I gotta do.)"
+
+    menu flora_03:
+        "CUT HER IN TWAIN!":
+            #TODO
+        "SUPLEX HER INTO THE GROUND!":
+            #TODO
+        "Continue the date.":
+            #TODO
