@@ -1,5 +1,7 @@
 label zac:
     scene bg lake
+    play music "cannery.mp3" loop
+
     show jumbo happy at center with easeinleft
     j "Wow, it's been a while since I've been to this beautiful lake."
     j @ neutral "..."

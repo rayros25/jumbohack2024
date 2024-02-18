@@ -64,28 +64,30 @@ label gamestart:
     $ flora_route = True 
     $ luke_route = True 
     $ zac_route = True
-# TODO: check this conditional
-    menu route_choice:
-        # if !flora_route && !luke_route && !zac_route:
-        #     jump done
-        j "I wonder where I should go to find the invasive species..."
-        "The forest" if flora_route:
-            $ flora_route = False
-            jump flora
-        "The woods" if luke_route:
-            $ luke_route = False
-            jump luke
-        "The lake" if zac_route:
-            $ zac_route = False
-            jump zac
+
+label route_choice:
+    if not flora_route and not luke_route and not zac_route:
+        jump done
+    else:
+        menu route_choice_menu:
+            j "I wonder where I should go to find the invasive species..."
+            "The forest" if flora_route:
+                $ flora_route = False
+                jump flora
+            "The woods" if luke_route:
+                $ luke_route = False
+                jump luke
+            "The lake" if zac_route:
+                $ zac_route = False
+                jump zac
 
 label done:
     scene bg tischroof
-    "Hopefully you've had a fun time,"
-    "and learned a little bit about what to do and not to do when you 
-    encounter invasive species."
+    "And with that, I earned all that extra credit for BIO 14."
+    "It still wasn't enough to bump me up a letter, but hey, a C+ is better than a C."
+    "At least I could help my environment. I guess. Still wish it helped my report card more."
+    "Hopefully you've had a fun time, and learned a little bit about what to do and not to do when you encounter invasive species."
     "To learn more about other invasive species you may encounter in 
-    Massachusetts,"
-    "check out the Extra Info tab!"
+    Massachusetts, check out the Extra Info tab!"
     # This ends the game.
     call game_end

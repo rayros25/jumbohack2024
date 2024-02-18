@@ -1,6 +1,7 @@
 # TODO: improve movements
 label flora:
     scene bg forest
+    play music "trees.mp3" loop
 
     show mrose neutral
     f """
