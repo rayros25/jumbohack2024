@@ -13,18 +13,18 @@ label gamestart:
     # TODO: delete this
     # call gallery
 
-    # show jumbo happy at jumper:
-    #     zoom 0.5
+    # show jumbo happy at jumper
+    show jumbo happy
 
-    show flora test:
-        zoom 0.5
-
-    show zac test:
-        zoom 0.5
+    # show flora test
+    # show zac test
 
     # These display lines of dialogue.
     j "Oh wow! What a beautiful day we're having!"
     j "A brisk 60 degrees Farenheit... in the middle of February!"
+
+    show jumbo neutral at jumper
+
     j "So nice of the climate to change. I hated all that snow!"
 
     hide jumbo
@@ -46,13 +46,11 @@ label gamestart:
     hide lfly
 
 
-    show jumbo sad at jumper:
-        zoom 0.5
+    show jumbo sad
     # show jumbo sad
     j "Whoa! I can't believe the world is full of such evil beings!"
     j "I wish there was something I could do about it..."
-    show jumbo neutral at jumper:
-        zoom 0.5
+    show jumbo neutral at jumper
     j "I should do some more reading about them!"
 
     $ j.mission = "M1-tisch"
@@ -62,21 +60,24 @@ label gamestart:
     "I head to Tisch for research"
 
     scene bg tischroof
-    show jumbo neutral at jumper:
-        zoom 0.5
+    show jumbo neutral at jumper
     j "Oh, now I get it!"
 
     j "What if I used my womanly charms against them....."
 
     $ config.menu_include_disabled = True
     $ flora_route = True 
+    $ luke_route = True 
     $ zac_route = True
     $ luke_route = True
     menu route_choice:
         j "I wonder where I should go"
-        "The woods" if flora_route:
+        "The forest" if flora_route:
             $ flora_route = False
             jump flora
+        "The woods" if luke_route:
+            $ luke_route = False
+            jump luke
         "The lake" if zac_route:
             $ zac_route = False
             jump zac

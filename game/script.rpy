@@ -13,21 +13,7 @@ define z = Character("Zac", who_color="5E4B3C", what_prefix='"', what_suffix='"'
 define l = Character("Luke", who_color="B1282E", what_prefix='"', what_suffix='"') # Spotted Lanternfly
 
 transform jumper:
- # ease .06 yoffset 24
- # ease .06 yoffset -24
- # ease .05 yoffset 20
- # ease .05 yoffset -20
- # ease .04 yoffset 16
- # ease .04 yoffset -16
- # ease .03 yoffset 12
- # ease .03 yoffset -12
- # ease .02 yoffset 8
- # ease .02 yoffset -8
- # ease .01 yoffset 4
- # ease .01 yoffset -4
- # ease .01 yoffset 0
-
-    # pause .15
+    pause .05
     yoffset 0
     easein .175 yoffset -10
     easeout .175 yoffset 0

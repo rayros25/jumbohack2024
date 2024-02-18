@@ -2,7 +2,7 @@
 label flora:
     scene bg forest
 
-    show mrose
+    show mrose neutral
     f """
         Oh... Hello.
 
@@ -12,16 +12,14 @@ label flora:
 
         Anyways... Please don't mind the mess, ehe.
     """
-    hide mrose
 
-    show jumbo
+    show mrose at right with move
+    show jumbo happy at left with easeinleft
     j "Who are you?"
-    hide jumbo
 
-    show mrose
+    show mrose happy
     f "Oh... I'm Flora... I'm a multiflora rose..." 
     f "Rosa Multiflora, if you care about those sorts of names..."
-    hide mrose
 
     $ config.menu_include_disabled = True
     $ quest_to_defeat_you = True
