@@ -9,7 +9,7 @@ default j.mission = "none"
 
 # Invasive species
 define f = Character("Flora", who_color="C1CD23", image="mrose") # Multiflora Rose
-define z = Character("Zac", who_color="5E4B3C", image="zmussel") # Zebra Mussel
+define z = Character("Zac", who_color="5E4B3C", image="zmussel", ) # Zebra Mussel
 define l = Character("Luke", who_color="B1282E", image="lfly") # Spotted Lanternfly
 
 transform jumper:
@@ -33,7 +33,6 @@ label splashscreen:
 
 # The game starts here.
 label start:
-    play music "duck.mp3" loop
     jump gamestart
 
 label game_end:

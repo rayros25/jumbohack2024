@@ -220,7 +220,7 @@ label flora:
             show jumbo happy
             show mrose sad
             "Jumbo-chan CUTS HER APART WITH THE SHEARS she just so happens to have in her trunk."
-            hide mrose with easeoutright
+            hide mrose with dissolve
             show jumbo at center with move
 # TODO: slice sound effect + visual effect?
             """
@@ -241,7 +241,7 @@ label flora:
 
                 And leaves, flowers, stems, and seeds scatter everywhere.
             """
-            hide mrose with easeoutright
+            hide mrose with dissolve
             show jumbo at center with move
             """
 
@@ -265,7 +265,7 @@ label flora:
                 Flora eventually touches a lot of the plants there, 
                 and drops seeds and stalks all around the gardens.
             """
-            hide mrose with easeoutright
+            hide mrose with dissolve
             show jumbo at center with move
             j "Hopefully something doesn't happen from that... 
             But the date went well?"

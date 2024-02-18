@@ -12,7 +12,8 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("jumbohack2024")
+# hopefully changing this doesn't break anything
+define config.name = _("Rizzing Up Invasive Species")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set

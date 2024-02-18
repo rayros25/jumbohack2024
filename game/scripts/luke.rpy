@@ -1,5 +1,8 @@
 label luke:
     scene bg forest
+    play music "griphop.mp3" loop
+
+    show jumbo neutral
 
     """
     I wander through the forest in search for one of the creatues on my list.
@@ -10,7 +13,8 @@ label luke:
 
     It wasn't too long before I spotted it in the distance. The lanternfly's bright coloration gave it away.
     """
-    show lfly
+    show jumbo at left with move
+    show lfly happy at right with easeinright
     l "Hmm? A stranger... whats your buisness with me?"
 
     """
@@ -23,11 +27,9 @@ label luke:
   
     l "Oi. What're you starin at me like that for eh? You got a death wish or something?"
     
-    hide lfly
     
     "Eep! Gotta say something fast!"
 
-    show jumbo
 
         
     $ config.menu_include_disabled = True
@@ -37,47 +39,38 @@ label luke:
             j "Oh no particular reason. I'm just goin around squishing bugs!"
             "Wait what?! I'm supposed to be getting close to these species so I can kill them!"
             "I can't just go around admitting that!"
-            hide jumbo
             show lfly
             l "Oh I see..."
             l "Good thing I'm not a bug then. Thanks for taking out the competition"
             "Oh thank god. Lets say some something else"
             $ squish = False
-            hide lfly
             jump luke_1
         "I'm just drifiting around.":
             j "I'm just kinda drifting around, you know what I mean. I'm uhh a drifter."
             "Real smooth of me."
-            hide jumbo
             show lfly
             l "Really huh. I'm also a bit of a drifter. I go from plant to plant, cutting each down for my next meal"
             l "Once i'm done with one, I go after the one next to it. And then the next"
             l "This trip's taken me all across the states."
             l "Guess we'll be getting along then huh."
             "Well that went better than I thought."
-            hide lfly
         "I'm looking for new species in my area.":
             j "I'm looking for new species in my area. Mind telling me where I might find some?"
             "Oh yeah. Going for the flirty approach never fails. Men are desperate after all."
-            hide jumbo
             show lfly
             l "Well I guess you could say I'm new. I've come all the way from the east."
             l "Specifically, China's where I'm from. I like here a whooooole lot better though. Foods great here."
             l "You ever try any yet?"
             "Welp, I guess this one's only desperate for food"
-            hide lfly
     show lfly
     l "Oops. I forgot to introduce myself. Names Lycorma delicatula. But thats a mouthful."
     l "You can call me Luke the lanternfly. Good to meet you."
-    hide lfly
     show jumbo
     j "Nice to meet you too!"
     j "Say... I'm not really doing anything right now. Maybe we could go get something to eat?"
-    hide jumbo
     show lfly
     "I can't read Luke's expression under his hood. He doesn't say anything for a little bit, staring at the ground."
     l "Why not. I guess I could use the company. I know a place."
-    hide lfly
 
     scene bg grapeyard
 
@@ -89,7 +82,7 @@ label luke:
     We walked through the vineyard for a little bit, talking and chatting a bit.
     """
 
-    show lfly
+    show lfly happy
     l "During this time of the year, I love to come places like these to eat"
     "Luke inspects a nearby fine, full of grapes"
     l "Lots of great trees and plants, and plenty of fruit."
@@ -107,10 +100,12 @@ label luke:
     It was a bit of a grizzly sight. After he was done, Luke licked his lips.
     """
 
+    show lfly at right with move
+    show jumbo sad at left with easeinleft
+
     l "Aaaah... Nothing like a bit of fruit after a long walk."
     "Luke picks up some uneaten vines off the ground."
     l "You want any?"
-    hide lfly
     show jumbo
     menu luke_2:
         "Enthusastically eat them": 
@@ -144,7 +139,6 @@ label luke:
     l "Well, time to eat a couple more. I've just gotten started"
     j "Just... gotten started?"
 
-    hide lfly
     """
     Before I could say more, Luke started to hack and slash at more of the plants with startling speed.
 
@@ -166,19 +160,20 @@ label luke:
 
     scene bg tree
 
+    show lfly happy at right with easeinleft
+    show jumbo neutral at left with easeinleft
+
     l "You're about to witness something pretty special, i'd reckon."
     l "You see... Us lanternflys have a bit of a plan."
     l "Ever since we've gotten here from China, our goal has been to spread as far as possible here."
     l "And to do that... there's gotta be more of us. So, I'll have to lay down some eggs here."
     l "Its uh... a little embarrassing to be honest. But I'm glad you're here to see it."
 
-    show jumbo
 
     j "Im happy to be here to see it to Luke. Its been really fun being here with you today."
     "I flash him a fake smile, knowing exactly what I would be doing next."
     "Its a bit of a pity, but Luke still is an invasive species. If I let him spread, that grapeyard wouldn't be the only thing he would destroy."
 
-    show lfly
 
     l "Alright. I'll carve out a nice place to put them right here."
 
@@ -189,12 +184,12 @@ label luke:
         "Use Pesticide":
             "I pull the can of pesticide out of my bag and give it a little shake"
             "Then, I aim and spray at the person in front of me"
-            show lfly
+            show lfly sad
             l "Argh! P-Pesticide?"
             l "I-I thought we-"
-            hide lfly
             "Before Luke can finish his sentence, the axe slips from his hand."
             "He crumples to the ground, leaving only a gash in the tree in front of him."
+            hide lfly with dissolve
 
             """
                 My task is complete! But Pesticide was probably a bit overkill...
@@ -207,19 +202,21 @@ label luke:
             """
 
         "Squish!":
-            show Jumbo
+            show jumbo happy
             "From my bag, I pull out something sure to end the invasive species on front of me."
             "My comically large hammer"
             "I raise it above my head, and let loose the final words that Luke would hear."
             
             j "Nice ----- bro!"
             
-            show lfly
+            show lfly mad
 
             l "...what?"
 
             "CLANG" 
             # TODO play metal pipe
+
+            hide lfly with dissolve
             
             "I bring the might hammer down onto luke, turning him into a pancake. Looks like his journey is over"
             # TODO turn him into a pancake
@@ -233,8 +230,9 @@ label luke:
         "Let Luke continue":
             "Ugh... I just cant do it. I can't bring myself to kill Luke, even if he's invasive."
             "Begrudgingly, I let him continue his process until he was done."
+            "Hours passed by..."
             # TODO add a fade to black
-            show lfly
+            show lfly happy
 
             l "Alright. I'm finished."
 
@@ -247,9 +245,11 @@ label luke:
             l "Though..."
             l "I'm glad I met you."
 
-            "With that, Luke grabbed his axe, and walked away"
+            hide lfly with easeoutright
+            "With that, Luke grabbed his axe, and walked away."
             "As he left, I couldn't help but feel a pang of regret for what I had done."
             "Or rather, what I hadn't done."
-            "Nevertheless, I finished my date with Luke"
+            "Nevertheless, I finished my date with Luke."
+
     "Seeing as I was done here, I left the tree"
     jump route_choice
