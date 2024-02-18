@@ -1,4 +1,4 @@
-# TODO replace "show jumbo" with appropriate Jumbo-chan sprites
+# TODO: improve movements
 label flora:
     scene bg forest
 
@@ -24,9 +24,11 @@ label flora:
     $ config.menu_include_disabled = True
     $ quest_to_defeat_you = True
     menu flora_01:
+        # show mrose happy
         f "So what brings you here?"
         "I'm on a quest to defeat you?" if quest_to_defeat_you:
-            f """
+            # show mrose mad
+            f @ mad """
                 Uhhh... Sure?
 
                 No... Why are you actually here?
@@ -34,7 +36,7 @@ label flora:
             $ quest_to_defeat_you = False
             jump flora_01
         "I was wandering through the woods and saw you":
-            show jumbo
+            show jumbo happy at jumper
             j """
                 I was wandering through the woods and saw you,
 
@@ -42,8 +44,7 @@ label flora:
 
                 So, hi!
             """
-            hide jumbo
-            show mrose
+            show mrose happy at jumper
             f """
                 Well, nice to meet you...
 
@@ -53,9 +54,8 @@ label flora:
 
                 I should let you know something about me...
             """
-            hide mrose
         "I was looking at all the beautiful plants":
-            show jumbo
+            show jumbo happy at jumper
             j """
                 I was looking at all the beautiful plants,
 
@@ -63,8 +63,7 @@ label flora:
 
                 What a coincidence...
             """
-            hide jumbo
-            show mrose
+            show mrose talking at jumper
             f """
                 A- Yes, a coincidence...
 
@@ -74,8 +73,7 @@ label flora:
 
                 Speaking of...
             """
-            hide mrose
-    show mrose
+    show mrose neutral
     f """
         You see that crab apple tree over there...
 
@@ -85,13 +83,10 @@ label flora:
 
         If you know what I mean...
     """
-    hide mrose
 
-    show jumbo
-    j "Uhuh. So... What do you like to do for fun?"
-    hide jumbo
+    j @ talking "Uhuh. So... What do you like to do for fun?"
 
-    show mrose
+    show mrose at jumper
     f """
         Oh. Hm... I really like to climb on top of other plants and get taller,
 
@@ -115,13 +110,12 @@ label flora:
 
         ...Um, I guess I'll ask you the same:
     """
-    hide mrose
 
     menu flora_02:
         f "What do you like to do for fun?"
 
         "Legendary plant destructor":
-            show jumbo
+            show jumbo talking
             j """
                 I like to dress up in a cardboard box and become
 
@@ -129,48 +123,38 @@ label flora:
 
                 Feared by the many plants who so happen to get in my way...
             """
-            hide jumbo
-            show mrose
+            show mrose happy
             f """
                 Hehe. Well, I wouldn't get in your way if you were to do that.
 
                 In fact, you should take me along. 
                 It'd be a nice change of pace.
             """
-            hide mrose
         "Reading books":
-            show jumbo
-            j """
+            j @ talking """
                 I enjoy reading books outside.
 
                 It's a nice way to pass the time, and explore other universes
                 outside our own.
             """
-            hide jumbo
-            show mrose
-            f """
+            f @ talking """
                 Ooh. I would love to read books together outside sometime.
 
                 It's always nice to get to learn more about others...
 
                 Especially you.
             """
-            hide mrose
         "Exploring my environment":
-            show jumbo
-            j """
+            j @ talking """
                 I love exploring new places.
 
                 I'm always looking out for new places to wander around.
 
                 Especially if they're not too crowded...
             """
-            hide jumbo
-            show mrose
-            f "Ooh... I would love to explore around with you..."
+            f @ talking "Ooh... I would love to explore around with you..."
             f "I wonder where we could go together..."
-            hide mrose
-    show mrose
+
     f """
         Oh... I had an idea, let's go to the botanical gardens...
 
@@ -178,9 +162,11 @@ label flora:
 
         Call it a date, if you will. ;)
     """
-    hide mrose
 
     scene bg botgarden
+
+    show mrose happy at right with easeinright
+    show jumbo happy at left with easeinleft
     j """
         (Huh... It was easier to get her on a date than I thought...)
 
@@ -189,8 +175,7 @@ label flora:
         (Well, it's time to find an empty place in the gardens)
     """
 
-    show jumbo
-    j """
+    j @ talking """
         Wow, look at all the pretty flowers.
 
         They aren't as pretty as you are though!
@@ -203,17 +188,13 @@ label flora:
         
         I'm the one who has to keep pulling you off them, you know.
     """
-    hide jumbo
 
-    show mrose
     f """
         Oh, sorry... Don't worry about me. 
     
         I'm just trying to get a better view of the gardens.
     """
-    hide mrose
 
-    show jumbo
     j """
         A view of the gardens, huh? You know what would give the best view...
 
@@ -221,19 +202,14 @@ label flora:
         
         I think that would let you get a higer viewpoint.
     """
-    hide jumbo
 
-    show mrose
     f """
         Ehe... If you don't mind?
 
         Just be sure to hold me tight so I don't fall... Okay?
     """
-    hide mrose
 
-    show jumbo
     j "All right. I promise I won't ever let you fall."
-    hide jumbo
 
     j "(While she is nice, she is an invasive species, 
     so I gotta do what I gotta do.)"
@@ -241,10 +217,12 @@ label flora:
     menu flora_03:
         "CUT HER IN TWAIN!":
             show jumbo happy
+            show mrose sad
+            "Jumbo-chan CUTS HER APART WITH THE SHEARS she just so happens to have in her trunk."
+            hide mrose with easeoutright
+            show jumbo at center with move
+# TODO: slice sound effect + visual effect?
             """
-                Jumbo-chan CUTS HER APART WITH THE SHEARS 
-                she just so happens to have in her trunk.
-
                 Then she drops the pieces to the ground 
                 and sprays herbicide on them.
 
@@ -253,13 +231,18 @@ label flora:
                 Congratulations. Congratulations. Congratulations.
             """
             j "Well, I didn't let her fall."
-            hide jumbo happy
         "SUPLEX HER INTO THE GROUND!":
             show jumbo sad
+            show mrose sad
+# TODO: rotate flora?
             """
                 Jumbo-chan suplexes Flora into the ground...
 
                 And leaves, flowers, stems, and seeds scatter everywhere.
+            """
+            hide mrose with easeoutright
+            show jumbo at center with move
+            """
 
                 Unfortunately, Jumbo-chan has helped her spread her influence 
                 in a new environment... 
@@ -271,7 +254,6 @@ label flora:
             """
             j "I'd better get out of here before I'm banned from 
             the botanical gardens for life."
-            hide jumbo sad
         "Continue the date.":
             show jumbo neutral
             """
@@ -282,8 +264,9 @@ label flora:
                 Flora eventually touches a lot of the plants there, 
                 and drops seeds and stalks all around the gardens.
             """
+            hide mrose with easeoutright
+            show jumbo at center with move
             j "Hopefully something doesn't happen from that... 
             But the date went well?"
-            hide jumbo neutral
     j "Well, my trip to the woods was certainly eventful..."
     jump route_choice
