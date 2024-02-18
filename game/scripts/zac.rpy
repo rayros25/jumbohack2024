@@ -89,11 +89,48 @@ label zac:
             z "IT WAS FUN while it last it lasted, though."
             z "WE'VE ALSO ENJOYED brainstorming ideas 
             on how to GROW OUR BUSINESS"
-            z "Which is how we've met you!"
             hide zmussel
         "Try something else?":
+            show jumbo
             j "Have you considered trying something else?"
-            # TODO
+            hide jumbo
+            show zmussel
+            z "Yeh. Well if you'd believe it, 
+            I am interested in EATING A LOT OF ALGAE!"
+            z "Though there's not too much around here any more..z"
+            hide zmussel
         "So that's why...":
+            show jumbo
             j "Oh, so that's why there's no customers."
-            # TODO
+            hide jumbo
+            show zmussel
+            z "YEH! There's a limit to our customer attraction abilities."
+            z "Since we're stuck in this lake our screams don't get very far..."
+            hide zmussel
+    show zmussel
+    z "There IS one thing we've consistently enjoyed throughout our time here!"
+    z "Tailoring the ecosystem of this lake to our business' liking!"
+    z "The fish here are a bit foolish..." 
+    z "Simply remove some of the plankton from their food chain,"
+    z "and they will leave the area for deeper waters where the plants survive."
+    z "But in the process of this, we've grown a bit bored of this old lake..."
+    z "Enough about us, tell us a bit about yourself."
+    hide zmussel
+
+    menu zac_03:
+        z "What do you like to do for fun?"
+        "Swimming":
+            show jumbo
+            j "I've enjoyed swimming since I was a child."
+            j "Whenever I'm stressed I love to go for a swim in the river."
+            hide jumbo
+            show zmussel
+            z "Sounds like a lot of fun, 
+            being able to float around in the water..."
+            z "Maybe we could borrow an innertube and experience with you."
+            z "That would be FUN!"
+            hide zmussel
+        "Watching sunsets over the river":
+            j "river TODO"
+        "Eating sand":
+            j "sand TODO"
