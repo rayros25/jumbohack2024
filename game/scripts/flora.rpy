@@ -268,5 +268,5 @@ label flora:
             show jumbo at center with move
             j "Hopefully something doesn't happen from that... 
             But the date went well?"
-    j "Well, my trip to the woods was certainly eventful..."
+    j "My trip to the woods was certainly eventful..."
     jump route_choice
