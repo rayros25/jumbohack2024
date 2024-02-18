@@ -312,7 +312,8 @@ screen navigation():
         textbutton _("Preferences") action ShowMenu("preferences")
 
         # added here
-        textbutton _("Extra Info") action ShowMenu("extrainfo")
+        if not main_menu:
+            textbutton _("Extra Info") action ShowMenu("extrainfo")
 
         if _in_replay:
 
