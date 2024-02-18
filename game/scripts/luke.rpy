@@ -61,10 +61,7 @@ label luke:
             l "You ever try any yet?"
             "Welp, I guess this one's only desperate for food"
             hide lfly            
-    "Oops. I forgot to introduce myself. Names Luke tbe "
-
-
-
-    # j "I'm just looking to meet new species in my area"
+    l "Oops. I forgot to introduce myself. Names Lycorma delicatula. But thats a mouthful."
+    l "You can call me Luke the lanternfly."
 
    
