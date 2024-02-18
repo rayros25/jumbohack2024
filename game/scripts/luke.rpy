@@ -96,7 +96,7 @@ label luke:
     l "Couldn't really ask for more."
 
     """
-    Schwing! Luke takes his axe and slashes at the vines, severing multiple of them.
+    Schwing! Luke takes his axe and slashes at a nearby grape plant, sending grapevines flying.
 
     Then, he grabs their remains and pulled them towards his face. 
 
@@ -141,11 +141,114 @@ label luke:
             j "Huh? Oh... yeah! There's only a few of us out there you know."
             "Phew"    
     "Luke showed a smile. I can sense the bond between us growing. Unfortunately for him, that bond would have to be ending soon."
+    l "Well, time to eat a couple more. I've just gotten started"
+    j "Just... gotten started?"
 
-    l "Alright miss. I gotta do something by this tree before we get going. You're welcome to watch of course."
+    hide lfly
+    """
+    Before I could say more, Luke started to hack and slash at more of the plants with startling speed.
+
+    Then, as the leaves fell to the ground, he grabbed and shoved them into his mouth like a starving lion.
+
+    Then he did it again, and again, until a whole row of the plants had been destroyed and devoured.
+    """
+    
+    show lfly
+    l "Aahh that hit the spot. Nothing like a nice meal in the afternoon eh?"
+    j "y-yeah, you ate a whole lot there. Do you even have any room for later"
+    l "Of course I do. That was like an average lunch for me, so I'll probably be back here later"
+
+    "Huh. No wonder these guys are considered invasive. I'm starting to see the problem here."
+
+    l "Alright miss. I gotta do something by this tree before we get going. You're welcome to watch if you want."
     j "Oh sure! I'd love to see whatever you're doing"
     "Sound like my chance to strike!"
 
     scene bg tree
 
-    l "ligma"
+    l "You're about to witness something pretty special, i'd reckon."
+    l "You see... Us lanternflys have a bit of a plan."
+    l "Ever since we've gotten here from China, our goal has been to spread as far as possible here."
+    l "And to do that... there's gotta be more of us. So, I'll have to lay down some eggs here."
+    l "Its uh... a little embarrassing to be honest. But I'm glad you're here to see it."
+
+    show jumbo
+
+    j "Im happy to be here to see it to Luke. Its been really fun being here with you today."
+    "I flash him a fake smile, knowing exactly what I would be doing next."
+    "Its a bit of a pity, but Luke still is an invasive species. If I let him spread, that grapeyard wouldn't be the only thing he would destroy."
+
+    show lfly
+
+    l "Alright. I'll carve out a nice place to put them right here."
+
+    "Luke starts to hack at the tree with his axe. His back is turned to me."
+    "Seeing the opportuntiy, I decide to act."
+
+    menu luke_3:
+        "Use Pesticide":
+            "I pull the can of pesticide out of my bag and give it a little shake"
+            "Then, I aim and spray at the person in front of me"
+            show lfly
+            l "Argh! P-Pesticide?"
+            l "I-I thought we-"
+            hide lfly
+            "Before Luke can finish his sentence, the axe slips from his hand."
+            "He crumples to the ground, leaving only a gash in the tree in front of him."
+
+            """
+                My task is complete! But Pesticide was probably a bit overkill...
+
+                To kill one lanternfly isn't too hard to do with just my hands, and pesticides would kill all bugs who came here next.
+
+                Perhaps I could have done this differently...
+
+                I shrugged, and departed the grizzly scene. At least what's done is done.
+            """
+
+        "Squish!":
+            show Jumbo
+            "From my bag, I pull out something sure to end the invasive species on front of me."
+            "My comically large hammer"
+            "I raise it above my head, and let loose the final words that Luke would hear."
+            
+            j "Nice ----- bro!"
+            
+            show lfly
+
+            l "...what?"
+
+            "CLANG" 
+            # TODO play metal pipe
+            
+            "I bring the might hammer down onto luke, turning him into a pancake. Looks like his journey is over"
+            # TODO turn him into a pancake
+
+            """
+                My task is complete! I managed to eliminate the species with minimal collateral damage.
+                I turned and left with a smile on my face. A job well done! 
+                Sayonara, pancakefly.
+            """
+
+        "Let Luke continue":
+            "Ugh... I just cant do it. I can't bring myself to kill Luke, even if he's invasive."
+            "Begrudgingly, I let him continue his process until he was done."
+
+            show lfly
+
+            l "Alright. I'm finished."
+
+            "Luke drops his axe and turns to me."
+            l "Thanks again for being here with me."
+            "He looks at me with a happy smile on his face"
+            "I smile back, though as for whether it was fake or real, I didn't know..."
+            j "Of course. I guess I'll be seeing you then."
+            l "Yeah. I've got places to be. I'll be heading to Connecticut next."
+            l "Though..."
+            l "I'm glad I met you."
+
+            "With that, Luke grabbed his axe, and walked away"
+            "As he left, I couldn't help but feel a pang of regret for what I had done."
+            "Or rather, what I hadn't done."
+            "Nevertheless, I finished my date with Luke"
+    "Seeing as I was done here, I left the tree"
