@@ -43,7 +43,7 @@ label zac:
             hide jumbo
             show zmussel
             z "OH YEH!"
-            z "THANKS SO MUCH FOR CONSIDERING OUT PIPE CLOGGING SERVICES"
+            z "THANKS SO MUCH FOR CONSIDERING OUR PIPE CLOGGING SERVICES"
             hide zmussel
         "I don't want that":
             z "TODO"
