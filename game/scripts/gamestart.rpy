@@ -71,6 +71,7 @@ label gamestart:
     $ config.menu_include_disabled = True
     $ flora_route = True 
     $ zac_route = True
+    $ luke_route = True
     menu route_choice:
         j "I wonder where I should go"
         "The woods" if flora_route:
@@ -79,6 +80,9 @@ label gamestart:
         "The lake" if zac_route:
             $ zac_route = False
             jump zac
+        "The forest" if luke_route:
+            $ luke_route = False
+            jump luke
 
     # This ends the game.
     call game_end
