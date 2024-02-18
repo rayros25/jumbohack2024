@@ -157,3 +157,5 @@ label flora:
         Call it a date, if you will. ;)
     """
     hide mrose
+
+    scene bg botgarden
