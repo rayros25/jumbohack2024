@@ -79,7 +79,7 @@ label luke:
     l "Why not. I guess I could use the company. I know a place."
     hide lfly
 
-    # scene bg orchard
+    scene bg grapeyard
 
     """
     Luke and I travel to an vineyard nearby. The grapes shone in the light of the sun.
@@ -143,3 +143,9 @@ label luke:
     "Luke showed a smile. I can sense the bond between us growing. Unfortunately for him, that bond would have to be ending soon."
 
     l "Alright miss. I gotta do something by this tree before we get going. You're welcome to watch of course."
+    j "Oh sure! I'd love to see whatever you're doing"
+    "Sound like my chance to strike!"
+
+    scene bg tree
+
+    l "ligma"
