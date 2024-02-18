@@ -93,4 +93,4 @@ label done:
     "Hopefully you've had a fun time, and learned a little bit about what to do and not to do when you encounter invasive species."
     "To learn more about other invasive species you may encounter in Massachusetts, check out the Extra Info tab!"
     # This ends the game.
-    call game_end from _call_game_end
+    call game_end

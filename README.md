@@ -1,9 +1,17 @@
-# JumboHack 2024
-Comp Cat Returns
+# Rizzing Up Invasive Species
+
+TEAM: Comp Cat Returns
 
 Raymond Rosales, Aria Yang, Spencer Goss, Matthew Wong, Andrew Lin
 
---Visual Novel--
+## HOW TO USE
+Download the `jumbohack2024-1.0-dists` directory and extract the archive
+appropriate to your operating system. For Windows, simply enter the extracted
+folder and click `jumbohack2024.exe`. For MacOS, simply launch the extracted
+app. For Linux, simply enter the extracted folder and execute the script
+`jumbohack2024.sh`.
+
+## Visual Novel
 This visual novel aims to entertain and educate about invasive species.
 To run the visual novel, simply run the .exe file and the game will start.
 
@@ -15,7 +23,7 @@ The visual novel also contains a gallery containing a list of invasive species
 found in Massachussetts. Some data is displayed, and a link can be clicked to
 find more info. 
 
--- Webscraping Tool --
+## Webscraping Tool
 Included with the visual novel is a webscraping tool used to update the list of
 invasive species found in Massachussetts. 
 
@@ -26,9 +34,9 @@ in that directory to update the game.
 Ensure that all packages found in the invasive_scraper.py are installed in your
 computer if any errors arise. 
 
-NOTE: Do not move the game or script seperately. Move the outside dir instead.
+*NOTE:* Do not move the game or script seperately. Move the outside dir instead.
 
--- Sources --
+## Sources
 Background images were either sourced from Tufts or Creative Commons 
 distributions. Links are available in the Image Sources pdf. References used
 are cited in the Works Cited pdf.
