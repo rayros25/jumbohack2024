@@ -199,7 +199,13 @@ label zac:
     menu zac_05:
         z "Where should we go?"
         "Bleach Land":
-            "TODO"
+            show jumbo
+            j "I've been really wanting to see the wonders of the drive 
+            in theme park full of disinfectants!"
+            j "Let's go to Bleach Land!"
+            hide jumbo
+            # TODO good ending
+            jump route_choice
         "The Selfish Shellfish":
             "TODO"
         "Let's hurry to the next lake":
