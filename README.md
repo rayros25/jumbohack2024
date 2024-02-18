@@ -2,4 +2,4 @@
 Comp Cat Returns
 Raymond Rosales, Aria Yang, Spencer Goss, Matthew Wong, Andrew Lin
 
-This is the README
+This Visual Novel aims to entertain and educate about invasive species.
