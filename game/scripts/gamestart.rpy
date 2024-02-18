@@ -10,7 +10,8 @@ label gamestart:
     # show jumbo happy:
     #     yalign 100
 
-    call json_test
+    # TODO: delete this
+    call gallery
 
     show jumbo happy:
         zoom 0.5
