@@ -7,7 +7,10 @@ label gamestart:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-    show jumbo
+    # show jumbo happy:
+    #     yalign 100
+    show jumbo happy:
+        zoom 0.5
 
     # These display lines of dialogue.
     j "Oh wow! What a beautiful day we're having!"
@@ -33,9 +36,13 @@ label gamestart:
     hide lfly
 
 
-    show jumbo
+    show jumbo sad:
+        zoom 0.5
+    # show jumbo sad
     j "Whoa! I can't believe the world is full of such evil beings!"
     j "I wish there was something I could do about it..."
+    show jumbo neutral:
+        zoom 0.5
     j "I should do some more reading about them!"
 
     $ j.mission = "M1-tisch"
@@ -45,7 +52,8 @@ label gamestart:
     "I head to Tisch for research"
 
     scene bg tischroof
-    show jumbo
+    show jumbo neutral:
+        zoom 0.5
     j "Oh, now I get it!"
 
     j "What if I used my womanly charms against them....."
