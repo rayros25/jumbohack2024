@@ -170,7 +170,7 @@ label zac:
     z "We could take our sweet time with the date. Just think about it."
     hide zmussel
 
-    menu zac_04
+    menu zac_04:
         "Refuse.":
             "Indeed, the choice not to spread this 
             invasive species is the best one."
