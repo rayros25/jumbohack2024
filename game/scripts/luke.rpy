@@ -61,7 +61,19 @@ label luke:
             l "You ever try any yet?"
             "Welp, I guess this one's only desperate for food"
             hide lfly            
+    show lfly
     l "Oops. I forgot to introduce myself. Names Lycorma delicatula. But thats a mouthful."
-    l "You can call me Luke the lanternfly."
+    l "You can call me Luke the lanternfly. Good to meet you."
+    hide lfly
+    show jumbo
+    j "Nice to meet you too!"
+    j "Say... I'm not realyl doing anything right now. Maybe we could go get something to eat?"
+    hide jumbo
+    show lfly
+    "I can't read Luke's expression under his hood. He doesn't say anything for a little bit, staring at the ground."
+    l "Why not. I guess I could use the company. I know a place."
+    hide lfly
+
+
 
    
