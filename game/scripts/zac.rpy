@@ -204,9 +204,58 @@ label zac:
             in theme park full of disinfectants!"
             j "Let's go to Bleach Land!"
             hide jumbo
-            # TODO good ending
+            "Jumbo-chan and Zac go to Bleach Land."
+            show zmussel
+            z "So what are we doing here?"
+            hide zmussel
+            show jumbo
+            j "Don't mind it, just stay still..."
+            hide jumbo
+            "Jumbo-chan uses the bleach at Bleach Land to disinfect her car as 
+            thoroughly as she can."
+            "She manages to kill most of Zac, but a part of them escapes 
+            anyway..."
+            "Hopefully Bleach Land is far enough from any bodies of water 
+            that could be contaminated."
+            "Congratulations, Jumbo-chan has eliminated the invasive species..."
+            "Probably."
             jump route_choice
         "The Selfish Shellfish":
-            "TODO"
+            "Jumbo-chan and Zac go to the Selfish Shellfish."
+            show jumbo
+            j "I'd love to order some mussels, but they said they were out..."
+            hide jumbo
+            show zmussel
+            z "You could order something else?"
+            hide zmussel
+            show jumbo
+            j "Wait a second, could you help me get some?"
+            hide jumbo
+            show zmussel
+            z "Sure??? (There should be some at the next lake...)"
+            hide zmussel
+            show jumbo
+            j "All righty, thanks for volunteering. I appreciate it."
+            j "(Gotta do what I gotta do...)"
+            hide jumbo
+            "Jumbo-chan picks up Zac and chucks them through the window 
+            into a boiling pot of water."
+            "Zac ends up MOSTLY cooked, but a piece of them 
+            escapes down the drain..."
+            "Jumbo-chan does end up with cooked mussels, but is wary of the 
+            concentration of toxins, so does not eat them."
+            "Also it would be weird to eat your date."
+            "Congratulations, Jumbo-chan has eliminated the invasive species..."
+            "Mostly."
+            jump route_choice
         "Let's hurry to the next lake":
-            "TODO"
+            "Jumbo-chan swims around the new lake while Zac watches."
+            "Once Jumbo-chan gets out, the two try to play volleyball,"
+            "but unfortunately Zac cuts it open with his shells."
+            "Zac yells a lot in frustration, but they all have fun."
+            "When the date ends, Jumbo-chan gently sets them down in the water."
+            "As promised, Jumbo-chan has the dubious honor of becoming 
+            royalty of the new lake..."
+            "Jumbo-chan has helped spread an invasive species."
+            j "I'm definitely not getting that extra credit now..."
+            jump route_choice
