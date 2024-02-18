@@ -54,7 +54,8 @@ label gamestart:
     "Jumbo-chan heads to Tisch for research"
 
     scene bg tischroof
-    show jumbo neutral at jumper
+    show jumbo neutral at center
+    show jumbo at jumper
     j "Oh, now I get it!"
     j "What if I used my womanly charms against them, 
     and then eliminated them once their guard is down!"
@@ -63,9 +64,10 @@ label gamestart:
     $ flora_route = True 
     $ luke_route = True 
     $ zac_route = True
+# TODO: check this conditional
     menu route_choice:
-        if !flora_route && !luke_route && !zac_route:
-            jump done
+        # if !flora_route && !luke_route && !zac_route:
+        #     jump done
         j "I wonder where I should go to find the invasive species..."
         "The forest" if flora_route:
             $ flora_route = False
@@ -77,13 +79,13 @@ label gamestart:
             $ zac_route = False
             jump zac
 
-    label done:
-    scene bg tisch
-        "Hopefully you've had a fun time,"
-        "and learned a little bit about what to do and not to do when you 
-        encounter invasive species."
-        "To learn more about other invasive species you may encounter in 
-        Massachusetts,"
-        "check out the Extra Info tab!"
+label done:
+    scene bg tischroof
+    "Hopefully you've had a fun time,"
+    "and learned a little bit about what to do and not to do when you 
+    encounter invasive species."
+    "To learn more about other invasive species you may encounter in 
+    Massachusetts,"
+    "check out the Extra Info tab!"
     # This ends the game.
     call game_end
