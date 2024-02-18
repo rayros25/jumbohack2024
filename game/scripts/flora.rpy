@@ -183,11 +183,21 @@ label flora:
 
     scene bg botgarden
     j """
-    (Huh... It was easier to get her on a date than I thought...)
+        (Huh... It was easier to get her on a date than I thought...)
 
-    (I didn't even have to ask myself.)
+        (I didn't even have to ask myself.)
 
-    (Well, time to find an empty place in the gardens, because...)
-
-    (Iiiiiit's killing time!!!)
+        (Well, it's time to find an empty place in the gardens)
     """
+
+    show jumbo
+    j """
+        Wow, look at all the pretty flowers.
+
+        They aren't as pretty as you are though!
+
+        Though I am curious... 
+        
+        Why do you keep trying to climb on top of all of them?
+    """
+    hide jumbo
