@@ -242,7 +242,10 @@ label flora:
     menu flora_03:
         "CUT HER IN TWAIN!":
             #TODO
+            jump flora_03
         "SUPLEX HER INTO THE GROUND!":
             #TODO
+            jump flora_03
         "Continue the date.":
             #TODO
+            jump flora_03

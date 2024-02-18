@@ -9,6 +9,9 @@ label gamestart:
     # directory.
     # show jumbo happy:
     #     yalign 100
+
+    call json_test
+
     show jumbo happy:
         zoom 0.5
 
