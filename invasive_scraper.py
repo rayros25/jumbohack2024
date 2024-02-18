@@ -38,9 +38,10 @@ def get_hosts(soup):
             if len(rows) > 0:
                 for row in rows:
                     host = re.sub("\s\s+" , " ", str(row.text).replace("\n", ""))
+                    host = re.sub('\(Fig.*?\)', '', host)
                     hosts.append(host)
             else:
-                hosts.append(re.sub("\s\s+" , " ", str(p.text)).replace("\n", ""))
+                hosts.append(re.sub('\(Fig.*?\)', '', re.sub("\s\s+" , " ", str(p.text)).replace("\n", "")))
             # print(hosts)
             return hosts
     print("host not found")
@@ -71,7 +72,8 @@ def get_appearance(soup):
                 rows = table.find_all("td", class_="normal_copy")
             # Attach rows to the appearances list
             for row in rows:
-                appearance = (re.sub("\s\s+" , " ", str(row.text)).replace("\n", ""))
+                appearance = re.sub("\s\s+" , " ", str(row.text)).replace("\n", "")
+                appearance = re.sub('\(Fig.*?\)', '', appearance)
                 appearances.append(appearance)
             print(appearances)
             return appearances
@@ -99,7 +101,8 @@ def get_damage(soup):
                 rows = table.find_all("td", class_="normal_copy")
             # Attach rows to the appearances list
             for row in rows:
-                appearance = (re.sub("\s\s+" , " ", str(row.text)).replace("\n", ""))
+                appearance = re.sub("\s\s+" , " ", str(row.text)).replace("\n", "")
+                appearance = re.sub('\(Fig.*?\)', '', appearance)
                 appearances.append(appearance)
             print(appearances)
             return appearances
