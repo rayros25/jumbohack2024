@@ -4,13 +4,13 @@
 # name of the character.
 
 # Protagonist
-define character.j = Character("Jumbo-chan", who_color="3E8EDE", what_prefix='"', what_suffix='"')
+define character.j = Character("Jumbo-chan", who_color="3E8EDE")
 default j.mission = "none"
 
 # Invasive species
-define f = Character("Flora", who_color="C1CD23", what_prefix='"', what_suffix='"') # Multiflora Rose
-define z = Character("Zac", who_color="5E4B3C", what_prefix='"', what_suffix='"') # Zebra Mussel
-define l = Character("Luke", who_color="B1282E", what_prefix='"', what_suffix='"') # Spotted Lanternfly
+define f = Character("Flora", who_color="C1CD23") # Multiflora Rose
+define z = Character("Zac", who_color="5E4B3C") # Zebra Mussel
+define l = Character("Luke", who_color="B1282E") # Spotted Lanternfly
 
 transform jumper:
     pause .05
