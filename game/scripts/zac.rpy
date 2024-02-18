@@ -89,11 +89,118 @@ label zac:
             z "IT WAS FUN while it last it lasted, though."
             z "WE'VE ALSO ENJOYED brainstorming ideas 
             on how to GROW OUR BUSINESS"
-            z "Which is how we've met you!"
             hide zmussel
         "Try something else?":
+            show jumbo
             j "Have you considered trying something else?"
-            # TODO
+            hide jumbo
+            show zmussel
+            z "Yeh. Well if you'd believe it, 
+            I am interested in EATING A LOT OF ALGAE!"
+            z "Though there's not too much around here any more..z"
+            hide zmussel
         "So that's why...":
+            show jumbo
             j "Oh, so that's why there's no customers."
-            # TODO
+            hide jumbo
+            show zmussel
+            z "YEH! There's a limit to our customer attraction abilities."
+            z "Since we're stuck in this lake our screams don't get very far..."
+            hide zmussel
+    show zmussel
+    z "There IS one thing we've consistently enjoyed throughout our time here!"
+    z "Tailoring the ecosystem of this lake to our business' liking!"
+    z "The fish here are a bit foolish..." 
+    z "Simply remove some of the plankton from their food chain,"
+    z "and they will leave the area for deeper waters where the plants survive."
+    z "But in the process of this, we've grown a bit bored of this old lake..."
+    z "Enough about us, tell us a bit about yourself."
+    hide zmussel
+
+    menu zac_03:
+        z "What do you like to do for fun?"
+        "Swimming":
+            show jumbo
+            j "I've enjoyed swimming since I was a child."
+            j "Whenever I'm stressed I love to go for a swim in the river."
+            hide jumbo
+            show zmussel
+            z "Sounds like a lot of fun, 
+            being able to float around in the water..."
+            z "Maybe we could borrow an innertube and experience with you."
+            z "That would be FUN!"
+            hide zmussel
+        "Watching sunsets over the river":
+            show jumbo
+            j "I love watching the sun set over the river."
+            j "It's just such a tranquil feeling."
+            hide jumbo
+            show zmussel
+            z "I know what you mean."
+            z "Watching the sunset from this lake is just the BEST!"
+            z "It's so pretty... Just like you ;)"
+            hide zmussel
+        "Eating sand":
+            show jumbo
+            j "I enjoy eating sand in the middle of the desert."
+            hide jumbo
+            show zmussel
+            z "Can't say we've been to the desert, ourselves, 
+            but we have had sand before."
+            z "It was quite grainy."
+            z "So that's something we've shared."
+            hide zmussel
+    
+    show zmussel
+    z "(Andrew the assistant noises)"
+    z "Oh, Andrew just had a GREAT idea!"
+    z "Could we ask you for a teensy tiny favor?"
+    z "Would you be willing to go on a date with all of us?"
+    z "There's not all that many at this point... 
+    What are we at right now, Fred?"
+    z "(Fred the accountant noises)"
+    z "100,000! Rookie numbers still!"
+    z "If you agree to take us somewhere, 
+    imagine the number of debts you'd have in your favor!"
+    z "You'd literally be the queen of that other lake! Fred?"
+    z "(Fred the accountant noises)"
+    z "There'd be millions of us!"
+    z "And, it's not like we'd need water for several days 
+    before we get to the next lake..."
+    z "We could take our sweet time with the date. Just think about it."
+    hide zmussel
+
+    menu zac_04:
+        "Refuse.":
+            "Indeed, the choice not to spread this 
+            invasive species is the best one."
+            "Congratulations. Congratulations. Congratulations."
+            "Jumbo-chan has successfully prevented the spread of this species."
+            jump route_choice
+        "Accept.":
+            "Jumbo-chan isn't sure she can kill all of them, 
+            but she decides to accept the date and try..."
+    
+    scene bg car
+    show zmussel
+    z "Oh, WOW! It's great to get to go to another place! TRULY GREAT!!!"
+    "Zac attaches themselves to Jumbo-chan's car."
+    z "You really look quite wonderful today."
+    hide zmussel
+    show jumbo
+    j "Likewise, you look very sharp today."
+    hide jumbo
+    show zmussel
+    z "AIGHT!"
+    z "SINCE this is A DATE!"
+    z "Before we get to the next lake..."
+    hide zmussel
+
+    menu zac_05:
+        z "Where should we go?"
+        "Bleach Land":
+            "TODO"
+        "The Selfish Shellfish":
+            "TODO"
+        "Let's hurry to the next lake":
+            "TODO"
