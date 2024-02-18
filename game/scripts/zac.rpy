@@ -56,3 +56,38 @@ label zac:
             z "Maybe we should call up our associates,"
             z "Get them to attach themselves to your boat or something?"
             hide zmussel
+    
+    show zmussel
+    z "But first, would you mind telling me your name, dear customer?"
+    hide zmussel
+    show jumbo
+    j "Oh, my name is Jumbo."
+    hide jumbo
+    show zmussel
+    z "A PLEASURE TO MEET YOU, JUMBO-CHAN!"
+    z "We're Zac! The best zebra mussel sales-muscle to ever exist!"
+    z "We're THE prime specimens of the Dreissena polymorpha species!"
+    z "At least in this lake area."
+    z "Though who are we kidding... We've barely got any sales recently"
+    z "(Fred the accountant noises)"
+    z "What's that, Fred?! Huh."
+    z "We're at the market cap, so to say, so there isn't 
+    anyone else to sell to in this area."
+    z "Huh... Truly unfortunate..."
+    hide zmussel
+    
+    menu zac_02:
+        "What's left?":
+            show jumbo
+            "So what's left for you now?"
+            hide jumbo
+            show zmussel
+            z "Other than expanding our buisness, there's not much to do..."
+            z "Though we have enjoyed attaching some of our smaller 
+            zebra mussels onto other mussels in this lake!"
+            z "Haven't really seen them around since..."
+            z "IT WAS FUN while it last it lasted, though."
+            z "WE'VE ALSO ENJOYED brainstorming ideas 
+            on how to GROW OUR BUSINESS"
+            z "Which is how we've met you!"
+            hide zmussel
