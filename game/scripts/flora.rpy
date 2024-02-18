@@ -1,3 +1,4 @@
+# TODO replace "show jumbo" with appropriate Jumbo-chan sprites
 label flora:
     scene bg forest
 
@@ -241,11 +242,25 @@ label flora:
 
     menu flora_03:
         "CUT HER IN TWAIN!":
-            #TODO
-            jump flora_03
+            show jumbo neutral
+            """
+            Jumbo-chan CUTS HER APART WITH THE SHEARS 
+            she just so happens to have in her trunk.
+
+            Then she drops the pieces to the ground 
+            and sprays herbicide on them.
+
+            Jumbo-chan has eliminated an invasive species.
+
+            Congratulations. Congratulations. Congratulations.
+            """
+            j "Well, I didn't let her fall."
+            hide jumbo neutral
         "SUPLEX HER INTO THE GROUND!":
-            #TODO
-            jump flora_03
+            show jumbo sad
+
+            hide jumbo sad
         "Continue the date.":
-            #TODO
-            jump flora_03
+        
+    # TODO end message
+    jump route_choice

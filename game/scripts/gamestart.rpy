@@ -64,7 +64,7 @@ label gamestart:
 
     $ config.menu_include_disabled = True
     $ flora_route = True 
-    menu path_choice:
+    menu route_choice:
         j "I wonder where I should go"
         "The woods" if flora_route:
             $ flora_route = False
