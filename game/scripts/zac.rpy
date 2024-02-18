@@ -46,4 +46,13 @@ label zac:
             z "THANKS SO MUCH FOR CONSIDERING OUR PIPE CLOGGING SERVICES"
             hide zmussel
         "I don't want that":
-            z "TODO"
+            show jumbo
+            j "I don't want that. That sounds awful."
+            j "However, what else are you offering?" 
+            j "Are you solely a pipe clogging buisness?"
+            hide jumbo
+            show zmussel
+            z "We're a tad hurt at that..."
+            z "Maybe we should call up our associates,"
+            z "Get them to attach themselves to your boat or something?"
+            hide zmussel
