@@ -3,8 +3,8 @@ Comp Cat Returns
 
 Raymond Rosales, Aria Yang, Spencer Goss, Matthew Wong, Andrew Lin
 
---visual novel--
-This Visual Novel aims to entertain and educate about invasive species.
+--Visual Novel--
+This visual novel aims to entertain and educate about invasive species.
 To run the visual novel, simply run the .exe file and the game will start.
 
 The visual novel is a lighthearted experience, but still contains informational
@@ -15,9 +15,9 @@ The visual novel also contains a gallery containing a list of invasive species
 found in Massachussetts. Some data is displayed, and a link can be clicked to
 find more info. 
 
--- webscraping tool --
+-- Webscraping Tool --
 Included with the visual novel is a webscraping tool used to update the list of
-invasive species found in massachussetts. 
+invasive species found in Massachussetts. 
 
 To run the webscraping tool, navigate to the directory containing both the game
 and the webscraping tool invasive_scraper.py. Then, run the script with python
