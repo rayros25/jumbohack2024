@@ -32,7 +32,7 @@ label zac:
             z "Ah, we see..."
             z "Well, we have plenty of other options that you can choose from."
             hide zmussel
-            already_clogged = False
+            $ already_clogged = False
             jump zac_01
         "Please clog my pipes":
             show jumbo

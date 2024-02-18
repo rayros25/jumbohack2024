@@ -13,14 +13,10 @@ label gamestart:
     # TODO: delete this
     # call gallery
 
-    # show jumbo happy at jumper:
-    #     zoom 0.5
+    show jumbo happy at jumper
 
-    show flora test:
-        zoom 0.5
-
-    show zac test:
-        zoom 0.5
+    # show flora test
+    # show zac test
 
     # These display lines of dialogue.
     j "Oh wow! What a beautiful day we're having!"
@@ -46,13 +42,11 @@ label gamestart:
     hide lfly
 
 
-    show jumbo sad at jumper:
-        zoom 0.5
+    show jumbo sad at jumper
     # show jumbo sad
     j "Whoa! I can't believe the world is full of such evil beings!"
     j "I wish there was something I could do about it..."
-    show jumbo neutral at jumper:
-        zoom 0.5
+    show jumbo neutral at jumper
     j "I should do some more reading about them!"
 
     $ j.mission = "M1-tisch"
@@ -62,8 +56,7 @@ label gamestart:
     "I head to Tisch for research"
 
     scene bg tischroof
-    show jumbo neutral at jumper:
-        zoom 0.5
+    show jumbo neutral at jumper
     j "Oh, now I get it!"
 
     j "What if I used my womanly charms against them....."

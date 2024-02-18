@@ -2,8 +2,7 @@
 label flora:
     scene bg forest
 
-    show mrose neutral:
-        zoom 0.5
+    show mrose neutral
     f """
         Oh... Hello.
 
@@ -14,14 +13,11 @@ label flora:
         Anyways... Please don't mind the mess, ehe.
     """
 
-    show mrose at right with move:
-        zoom 0.5
-    show jumbo happy at left with easeinleft:
-        zoom 0.5
+    show mrose at right with move
+    show jumbo happy at left with easeinleft
     j "Who are you?"
 
-    show mrose happy:
-        zoom 0.5
+    show mrose happy
     f "Oh... I'm Flora... I'm a multiflora rose..." 
     f "Rosa Multiflora, if you care about those sorts of names..."
 
