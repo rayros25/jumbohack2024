@@ -313,7 +313,8 @@ screen navigation():
 
         # added here
         if main_menu:
-            textbutton _("Extra Info") action Jump("gallery")
+            textbutton _("Extra Info") action ShowMenu("extrainfo")
+            # textbutton _("Extra Info") action Jump("gallery")
 
         if _in_replay:
 
@@ -740,14 +741,25 @@ screen extrainfo():
 
         vbox:
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            label "Animals"
+            # text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
+            # if gui.about:
+            #     text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            # text _("[animal_list[0]['name']] with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            
+            for anim in animal_list:
+                # imagebutton auto "[anim['picture']]" action NullAction()
+                if anim['picture']:
+                    imagebutton idle "animal_data_picture/" + anim['picture'] action NullAction()
+                label "[anim['name']] {a=[anim['url']]}(Learn more){/a}"
+                text "[anim['description']]\n"
+                for ap in anim['appearance']:
+                    text "‣ [ap]"
+                # text "[anim['picture']]"
+                text "\n"
 
 
 style about_label is gui_label
