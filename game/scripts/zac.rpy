@@ -35,6 +35,15 @@ label zac:
             already_clogged = False
             jump zac_01
         "Please clog my pipes":
-            # TODO
+            show jumbo
+            j "I would love it if you would clog the pipes at my house."
+            j "Make my basement flood because my pipes are busted!"
+            j "(Yeah, right... I'd never accept 
+            \"help\" from someone so fishy.)"
+            hide jumbo
+            show zmussel
+            z "OH YEH!"
+            z "THANKS SO MUCH FOR CONSIDERING OUT PIPE CLOGGING SERVICES"
+            hide zmussel
         "I don't want that":
             # TODO
