@@ -33,7 +33,6 @@ label splashscreen:
 
 # The game starts here.
 label start:
-    play music "duck.mp3" loop
     jump gamestart
 
 label game_end:

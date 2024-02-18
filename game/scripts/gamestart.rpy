@@ -1,4 +1,5 @@
 label gamestart:
+    play music "duck.mp3" loop
     scene bg westhall
 
     # show jumbo happy at jumper
@@ -66,6 +67,7 @@ label gamestart:
     $ zac_route = True
 
 label route_choice:
+    play music "duck.mp3" loop
     if not flora_route and not luke_route and not zac_route:
         jump done
     else:
