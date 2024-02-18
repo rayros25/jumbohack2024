@@ -1,0 +1,2 @@
+label zac:
+    scene lake
