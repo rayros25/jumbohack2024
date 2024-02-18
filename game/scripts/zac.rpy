@@ -21,4 +21,5 @@ label zac:
     menu zac_01:
         z "DO you want your PIPES clogged?!"
         "My pipes are already clogged":
-            # TODO
+            jump zac_01
+            # TODO: finish
