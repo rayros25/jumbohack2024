@@ -41,10 +41,9 @@ label gamestart:
             and reflects on what she's learned..."
 
     show jumbo sad
-    # show jumbo sad
     j "Whoa! Crimes against the environment..."
     j "I wish there was something I could do about it."
-    j "A bit of extra credit couldn't hurt, either."
+    j "A bit of extra credit couldn't hurt, either. Especially after that midterm."
     show jumbo neutral at jumper
     j "I should do some more reading about them!"
 
@@ -58,8 +57,11 @@ label gamestart:
     show jumbo neutral at center
     show jumbo at jumper
     j "Oh, now I get it!"
-    j "What if I used my womanly charms against them, 
-    and then eliminated them once their guard is down!"
+    j "I'm so glad Tisch Library provides us university students with a wealth of knowledge."
+    j "Now that I've learned about them, I need to think about how to defeat them..."
+    j "What if I used my womanly charms against them, and then eliminated them once their guard is down!"
+    show jumbo happy at jumper
+    j "Yes! I'm a genius! Time to search for these invasive species and rizz them up!"
 
     $ config.menu_include_disabled = True
     $ flora_route = True 
@@ -72,7 +74,7 @@ label route_choice:
         jump done
     else:
         menu route_choice_menu:
-            j "I wonder where I should go to find the invasive species..."
+            # j "I wonder where I should go to find the invasive species..."
             "The forest" if flora_route:
                 $ flora_route = False
                 jump flora
@@ -89,7 +91,6 @@ label done:
     "It still wasn't enough to bump me up a letter, but hey, a C+ is better than a C."
     "At least I could help my environment. I guess. Still wish it helped my report card more."
     "Hopefully you've had a fun time, and learned a little bit about what to do and not to do when you encounter invasive species."
-    "To learn more about other invasive species you may encounter in 
-    Massachusetts, check out the Extra Info tab!"
+    "To learn more about other invasive species you may encounter in Massachusetts, check out the Extra Info tab!"
     # This ends the game.
     call game_end

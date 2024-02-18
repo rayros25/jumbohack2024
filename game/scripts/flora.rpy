@@ -19,7 +19,7 @@ label flora:
 
     show mrose happy
     f "Oh... I'm Flora... I'm a multiflora rose..." 
-    f "Rosa Multiflora, if you care about those sorts of names..."
+    f "{i}Rosa Multiflora{/i}, if you care about those sorts of names..."
 
     $ config.menu_include_disabled = True
     $ quest_to_defeat_you = True
@@ -38,9 +38,7 @@ label flora:
         "I was wandering through the woods and saw you":
             show jumbo happy at jumper
             j """
-                I was wandering through the woods and saw you,
-
-                and then I wanted to say hi.
+                I was wandering through the woods and saw you, and then I wanted to say hi.
 
                 So, hi!
             """
@@ -57,9 +55,7 @@ label flora:
         "I was looking at all the beautiful plants":
             show jumbo happy at jumper
             j """
-                I was looking at all the beautiful plants,
-
-                and then happened upon you.
+                I was looking at all the beautiful plants, and then happened upon you.
 
                 What a coincidence...
             """
@@ -88,9 +84,7 @@ label flora:
 
     show mrose at jumper
     f """
-        Oh. Hm... I really like to climb on top of other plants and get taller,
-
-        because I love to see the world around me.
+        Oh. Hm... I really like to climb on top of other plants and get taller, because I love to see the world around me.
 
         Though I doubt the other plants really appreciate that...
 
@@ -105,8 +99,7 @@ label flora:
 
         ...Though others tell me that my thorns can be a bit prickly.
 
-        That doesn't matter too much, though, because I've blocked out 
-        most of the people I don't like anyways!
+        That doesn't matter too much, though, because I've blocked out most of the people I don't like anyways!
 
         ...Um, I guess I'll ask you the same:
     """
@@ -117,9 +110,9 @@ label flora:
         "Legendary plant destructor":
             show jumbo talking
             j """
-                I like to dress up in a cardboard box and become
+                I like to dress up in a cardboard box and become...
 
-                the LEGENDARY PLANT DESTRUCTOR!
+                the {b}LEGENDARY PLANT DESTRUCTOR!{/b}
 
                 Feared by the many plants who so happen to get in my way...
             """
@@ -127,8 +120,7 @@ label flora:
             f """
                 Hehe. Well, I wouldn't get in your way if you were to do that.
 
-                In fact, you should take me along. 
-                It'd be a nice change of pace.
+                In fact, you should take me along. It'd be a nice change of pace.
             """
         "Reading books":
             j @ talking """
@@ -211,8 +203,7 @@ label flora:
 
     j "All right. I promise I won't ever let you fall."
 
-    j "(While she is nice, she is an invasive species, 
-    so I gotta do what I gotta do.)"
+    j "(While she is nice, she is an invasive species, so I gotta do what I gotta do.)"
 
     menu flora_03:
         "CUT HER IN TWAIN!":
@@ -222,8 +213,7 @@ label flora:
             hide mrose with dissolve
             show jumbo at center with move
             """
-                Then she drops the pieces to the ground 
-                and sprays herbicide on them.
+                Then she drops the pieces to the ground and sprays herbicide on them.
 
                 Jumbo-chan has eliminated an invasive species.
 
@@ -242,16 +232,13 @@ label flora:
             show jumbo at center with move
             """
 
-                Unfortunately, Jumbo-chan has helped her spread her influence 
-                in a new environment... 
+                Unfortunately, Jumbo-chan has helped her spread her influence in a new environment... 
                 
                 She's scattered all through the botanical gardens.
 
-                Jumbo-chan has failed to eliminate this invasive species, 
-                and the noise brings more people around...
+                Jumbo-chan has failed to eliminate this invasive species, and the noise brings more people around...
             """
-            j "I'd better get out of here before I'm banned from 
-            the botanical gardens for life."
+            j "I'd better get out of here before I'm banned from the botanical gardens for life."
         "Continue the date.":
             show jumbo neutral
             """
@@ -259,12 +246,11 @@ label flora:
 
                 with Jumbo-chan carrying her all around the botanical gardens.
 
-                Flora eventually touches a lot of the plants there, 
-                and drops seeds and stalks all around the gardens.
+                Flora eventually touches a lot of the plants there, and drops seeds and stalks all around the gardens.
             """
             hide mrose with dissolve
             show jumbo at center with move
-            j "Hopefully something doesn't happen from that... 
-            But the date went well?"
+            j "Hopefully something doesn't happen from that... But the date went well?"
+
     j "My trip to the woods was certainly eventful..."
     jump route_choice

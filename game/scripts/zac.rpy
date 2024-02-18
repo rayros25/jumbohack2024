@@ -42,8 +42,7 @@ label zac:
             j "I would love it if you would clog the pipes at my house."
             j "Make my basement flood because my pipes are busted!"
             show jumbo neutral
-            j "(Yeah, right... I'd never accept 
-            \"help\" from someone so fishy.)"
+            j "(Yeah, right... I'd never accept \"help\" from someone so fishy.)"
             show zmussel at jumper
             z "OH YEH!"
             z "THANKS SO MUCH FOR CONSIDERING OUR PIPE CLOGGING SERVICES"
@@ -78,8 +77,7 @@ label zac:
             j @ sad "So what's left for you now?"
             show zmussel at jumper
             z "Other than expanding our buisness, there's not much to do..."
-            z "Though we have enjoyed attaching some of our smaller 
-            zebra mussels onto other mussels in this lake!"
+            z "Though we have enjoyed attaching some of our smaller zebra mussels onto other mussels in this lake!"
             z "Haven't really seen them around since..."
             show zmussel at jumper
             z "IT WAS FUN while it last it lasted, though."
@@ -88,9 +86,8 @@ label zac:
             show zmussel at jumper
         "Try something else?":
             j @ sad "Have you considered trying something else?"
-            z "Yeh. Well if you'd believe it, 
-            I am interested in EATING A LOT OF ALGAE!"
-            z "Though there's not too much around here any more..z"
+            z "Yeh. Well if you'd believe it, I am interested in EATING A LOT OF ALGAE!"
+            z "Though there's not too much around here any more..."
         "So that's why...":
             show jumbo
             j "Oh, so that's why there's no customers."
@@ -100,7 +97,7 @@ label zac:
     show zmussel
     z "There IS one thing we've consistently enjoyed throughout our time here!"
     z "Tailoring the ecosystem of this lake to our business' liking!"
-    z "The fish here are a bit foolish..." 
+    z "The fish here are a bit foolish..."
     z "Simply remove some of the plankton from their food chain,"
     z "and they will leave the area for deeper waters where the plants survive."
     z "But in the process of this, we've grown a bit bored of this old lake..."
@@ -113,8 +110,7 @@ label zac:
             j "I've enjoyed swimming since I was a child."
             j "Whenever I'm stressed I love to go for a swim in the river."
             show zmussel
-            z "Sounds like a lot of fun, 
-            being able to float around in the water..."
+            z "Sounds like a lot of fun, being able to float around in the water..."
             z "Maybe we could borrow an innertube and experience with you."
             z "That would be FUN!"
         "Watching sunsets over the river":
@@ -129,8 +125,7 @@ label zac:
             show jumbo
             j "I enjoy eating sand in the middle of the desert."
             show zmussel
-            z "Can't say we've been to the desert, ourselves, 
-            but we have had sand before."
+            z "Can't say we've been to the desert, ourselves, but we have had sand before."
             z "It was quite grainy."
             z "So that's something we've shared."
     
@@ -151,8 +146,7 @@ label zac:
 
     menu zac_04:
         "Refuse.":
-            "Indeed, the choice not to spread this 
-            invasive species is the best one."
+            "Indeed, the choice not to spread this invasive species is the best one."
             "Congratulations. Congratulations. Congratulations."
             "Jumbo-chan has successfully prevented the spread of this species."
             jump route_choice
@@ -214,12 +208,10 @@ label zac:
             jump route_choice
         "Let's hurry to the next lake":
             "Jumbo-chan swims around the new lake while Zac watches."
-            "Once Jumbo-chan gets out, the two try to play volleyball,"
-            "but unfortunately Zac cuts it open with his shells."
+            "Once Jumbo-chan gets out, the two try to play volleyball, but unfortunately Zac cuts it open with his shells."
             "Zac yells a lot in frustration, but they all have fun."
             "When the date ends, Jumbo-chan gently sets them down in the water."
-            "As promised, Jumbo-chan has the dubious honor of becoming 
-            royalty of the new lake..."
+            "As promised, Jumbo-chan has the dubious honor of becoming royalty of the new lake..."
             "Jumbo-chan has helped spread an invasive species."
             j "I'm definitely not getting that extra credit now..."
             jump route_choice

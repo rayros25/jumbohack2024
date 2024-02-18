@@ -35,22 +35,22 @@ label luke:
     $ config.menu_include_disabled = True
     $ squish = True
     menu luke_1:
-        "I'm here to squish some bugs! "if squish: 
+        "I'm here to squish some bugs! "if squish:
             j "Oh no particular reason. I'm just goin around squishing bugs!"
             "Wait what?! I'm supposed to be getting close to these species so I can kill them!"
             "I can't just go around admitting that!"
             show lfly
             l "Oh I see..."
-            l "Good thing I'm not a bug then. Thanks for taking out the competition"
-            "Oh thank god. Lets say some something else"
+            l "Good thing I'm not a bug then. Thanks for taking out the competition."
+            "Oh thank god. Lets say some something else."
             $ squish = False
             jump luke_1
         "I'm just drifiting around.":
             j "I'm just kinda drifting around, you know what I mean. I'm uhh a drifter."
             "Real smooth of me."
             show lfly
-            l "Really huh. I'm also a bit of a drifter. I go from plant to plant, cutting each down for my next meal"
-            l "Once i'm done with one, I go after the one next to it. And then the next"
+            l "Really huh. I'm also a bit of a drifter. I go from plant to plant, cutting each down for my next meal."
+            l "Once i'm done with one, I go after the one next to it. And then the next."
             l "This trip's taken me all across the states."
             l "Guess we'll be getting along then huh."
             "Well that went better than I thought."
@@ -61,7 +61,7 @@ label luke:
             l "Well I guess you could say I'm new. I've come all the way from the east."
             l "Specifically, China's where I'm from. I like here a whooooole lot better though. Foods great here."
             l "You ever try any yet?"
-            "Welp, I guess this one's only desperate for food"
+            "Welp, I guess this one's only desperate for food."
     show lfly
     l "Oops. I forgot to introduce myself. Names Lycorma delicatula. But thats a mouthful."
     l "You can call me Luke the lanternfly. Good to meet you."
@@ -83,8 +83,8 @@ label luke:
     """
 
     show lfly happy
-    l "During this time of the year, I love to come places like these to eat"
-    "Luke inspects a nearby fine, full of grapes"
+    l "During this time of the year, I love to come places like these to eat."
+    "Luke inspects a nearby fine, full of grapes."
     l "Lots of great trees and plants, and plenty of fruit."
     l "Couldn't really ask for more."
 
@@ -108,35 +108,35 @@ label luke:
     l "You want any?"
     show jumbo
     menu luke_2:
-        "Enthusastically eat them": 
-            j "Hell yeah I'll have them"
-            "I take the whole bunch and attempt to shove them into my own mouth"
-            "They were a little to long, so I scrunched them up into a ball, and barely managed to fit it in"
+        "Enthusastically eat them":
+            j "Hell yeah I'll have them."
+            "I take the whole bunch and attempt to shove them into my own mouth."
+            "They were a little to long, so I scrunched them up into a ball, and barely managed to fit it in."
             "I try chewing. Its very difficult, but I barely manage to finish the mass of plants in my mouth. It actually wasn't so bad!"
             j "ugh... I'm never doing that again..."
             show lfly
-            l "Heh. I like the way eat girl. Always like a good appetite"
+            l "Heh. I like the way eat girl. Always like a good appetite."
             j "R-Really? Thanks (I guess)!"
-            "This guy's got some real weird taste"
+            "This guy's got some real weird taste."
         "Take one":
             j "I'm not the hungry, so I'll just take one."
             "I take a vine from Luke's bundle and snack on it on the same way he did."
-            "The grapes tasted good, and their sweet taste helped contrast with the more bitter vine"
-            "It was actually pretty good! I couldn't imagine shoving them into my mouth like Luke did though"
-            j "Mmmm... That was pretty good. I kinda see why you like doing this"
+            "The grapes tasted good, and their sweet taste helped contrast with the more bitter vine."
+            "It was actually pretty good! I couldn't imagine shoving them into my mouth like Luke did though."
+            j "Mmmm... That was pretty good. I kinda see why you like doing this."
             show lfly
             l "Glad you enjoyed it."
         "Politely refuse":
             j "Sorry I cant eat this I'm uhh... a carnivore?"
-            "What an amazing excuse"
+            "What an amazing excuse."
             show lfly
             l "Hmm?"
-            "Luke raises his eyebrows in suscipsion"
+            "Luke raises his eyebrows in suscipsion."
             l "A carnivourous elephant huh... I didn't know those existed. You're quite the character aren't you."
             j "Huh? Oh... yeah! There's only a few of us out there you know."
             "Phew"    
     "Luke showed a smile. I can sense the bond between us growing. Unfortunately for him, that bond would have to be ending soon."
-    l "Well, time to eat a couple more. I've just gotten started"
+    l "Well, time to eat a couple more. I've just gotten started."
     j "Just... gotten started?"
 
     """
@@ -149,13 +149,13 @@ label luke:
     
     show lfly
     l "Aahh that hit the spot. Nothing like a nice meal in the afternoon eh?"
-    j "y-yeah, you ate a whole lot there. Do you even have any room for later"
-    l "Of course I do. That was like an average lunch for me, so I'll probably be back here later"
+    j "y-yeah, you ate a whole lot there. Do you even have any room for later."
+    l "Of course I do. That was like an average lunch for me, so I'll probably be back here later."
 
     "Huh. No wonder these guys are considered invasive. I'm starting to see the problem here."
 
     l "Alright miss. I gotta do something by this tree before we get going. You're welcome to watch if you want."
-    j "Oh sure! I'd love to see whatever you're doing"
+    j "Oh sure! I'd love to see whatever you're doing."
     "Sound like my chance to strike!"
 
     scene bg tree
@@ -163,16 +163,16 @@ label luke:
     show lfly happy at right with easeinleft
     show jumbo neutral at left with easeinleft
 
-    l "You're about to witness something pretty special, i'd reckon."
+    l "You're about to witness something pretty special, I'd reckon."
     l "You see... Us lanternflys have a bit of a plan."
     l "Ever since we've gotten here from China, our goal has been to spread as far as possible here."
     l "And to do that... there's gotta be more of us. So, I'll have to lay down some eggs here."
-    l "Its uh... a little embarrassing to be honest. But I'm glad you're here to see it."
+    l "It's uh... a little embarrassing to be honest. But I'm glad you're here to see it."
 
 
-    j "Im happy to be here to see it to Luke. Its been really fun being here with you today."
+    j "I'm happy to be here to see it to Luke. It's been really fun being here with you today."
     "I flash him a fake smile, knowing exactly what I would be doing next."
-    "Its a bit of a pity, but Luke still is an invasive species. If I let him spread, that grapeyard wouldn't be the only thing he would destroy."
+    "It's a bit of a pity, but Luke still is an invasive species. If I let him spread, that grapeyard wouldn't be the only thing he would destroy."
 
 
     l "Alright. I'll carve out a nice place to put them right here."
@@ -182,8 +182,8 @@ label luke:
 
     menu luke_3:
         "Use Pesticide":
-            "I pull the can of pesticide out of my bag and give it a little shake"
-            "Then, I aim and spray at the person in front of me"
+            "I pull the can of pesticide out of my bag and give it a little shake."
+            "Then, I aim and spray at the person in front of me."
             show lfly sad
             l "Argh! P-Pesticide?"
             l "I-I thought we-"
@@ -204,20 +204,20 @@ label luke:
         "Squish!":
             show jumbo happy
             "From my bag, I pull out something sure to end the invasive species on front of me."
-            "My comically large hammer"
+            "My comically large hammer."
             "I raise it above my head, and let loose the final words that Luke would hear."
             
             j "Sorry MC, prepare to be hammered!"
             
             show lfly mad
 
-            l "...but aren't {i}you{/i} the main character?"
+            l "...wait, aren't {i}you{/i} the main character?"
 
             "{i}{b}CLANG{/b}{/i}" 
 
             hide lfly with dissolve
             
-            "I bring the might hammer down onto luke, turning him into a pancake. Looks like his journey is over"
+            "I bring the might hammer down onto luke, turning him into a pancake. Looks like his journey is over."
 
             """
                 My task is complete! I managed to eliminate the species with minimal collateral damage.
@@ -226,7 +226,7 @@ label luke:
             """
 
         "Let Luke continue":
-            "Ugh... I just cant do it. I can't bring myself to kill Luke, even if he's invasive."
+            "Ugh... I just can't do it. I can't bring myself to kill Luke, even if he's invasive."
             "Begrudgingly, I let him continue his process until he was done."
             "Hours passed by..."
             show lfly happy
@@ -248,5 +248,5 @@ label luke:
             "Or rather, what I hadn't done."
             "Nevertheless, I finished my date with Luke."
 
-    "Seeing as I was done here, I left the tree"
+    "Seeing as I was done here, I left the tree."
     jump route_choice
