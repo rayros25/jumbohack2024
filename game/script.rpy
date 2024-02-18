@@ -23,6 +23,13 @@ transform jumper:
     # repeat
 # modified from https://lemmasoft.renai.us/forums/viewtopic.php?t=48050
 
+label splashscreen:
+    show text "{b}Content Warning:{/b} This game contains bugs, both digital and physical. You have been warned." with dissolve 
+    with Pause(4)
+    # pause 5
+    # hide text
+    return
+
 
 # The game starts here.
 label start:

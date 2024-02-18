@@ -86,7 +86,7 @@ label luke:
 
     The wind was nice and breezy, but the air was hot enough to where we wouldn't get cold.
 
-    We walked through the vineuard for a little bit, talking and chatting a bit.
+    We walked through the vineyard for a little bit, talking and chatting a bit.
     """
 
     show lfly
