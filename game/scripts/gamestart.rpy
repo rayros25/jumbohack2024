@@ -13,7 +13,7 @@ label gamestart:
     # TODO: delete this
     # call gallery
 
-    show jumbo happy:
+    show jumbo happy at jumper:
         zoom 0.5
 
     # These display lines of dialogue.
@@ -40,12 +40,12 @@ label gamestart:
     hide lfly
 
 
-    show jumbo sad:
+    show jumbo sad at jumper:
         zoom 0.5
     # show jumbo sad
     j "Whoa! I can't believe the world is full of such evil beings!"
     j "I wish there was something I could do about it..."
-    show jumbo neutral:
+    show jumbo neutral at jumper:
         zoom 0.5
     j "I should do some more reading about them!"
 
@@ -56,7 +56,7 @@ label gamestart:
     "I head to Tisch for research"
 
     scene bg tischroof
-    show jumbo neutral:
+    show jumbo neutral at jumper:
         zoom 0.5
     j "Oh, now I get it!"
 
