@@ -1,4 +1,6 @@
-define gal = Character('Gallery', kind=nvl, color="#c8c8ff")
+define gal = Character('Siri', kind=nvl, color="#c8c8ff")
+
+# define narrator = nvl_narrator
 
 init python:
     import json
@@ -22,13 +24,17 @@ init python:
     # listofiles2 = renpy.open_file(directory="animal_data/")
 
 label gallery:
+    scene bg davis
 
     # dialogue = json.dumps(scene1_english.json)
     # renpy.say(dialogue[0].who, dialogue[0].what)
     # animal = json.dumps("Boxwood Blight - Cylindrocladium pseudonaviculatum.json")
     # renpy.say(animal.name)
     while len(animal_list) > 0:
-        f "The name is [animal_list[0]['name']]"
+        gal "Name: [animal_list[0]['name']]"
+        nvl clear
+        gal "Description:[animal_list[0]['description']]\n"
         $ animal_list.pop(0)
+    nvl clear
 
     return

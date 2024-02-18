@@ -11,7 +11,7 @@ label gamestart:
     #     yalign 100
 
     # TODO: delete this
-    call gallery
+    # call gallery
 
     show jumbo happy:
         zoom 0.5
